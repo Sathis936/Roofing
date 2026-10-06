@@ -1,0 +1,49 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="600" height="350">
+  <defs>
+    <linearGradient id="prepBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="sprayGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.9"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.1"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" fill="url(#prepBg)"/>
+
+  <!-- Concrete Deck Substrate (Left: dirty, Right: freshly prepped) -->
+  <polygon points="50,180 550,180 550,310 50,310" fill="#334155"/>
+  <!-- Cleaned half -->
+  <polygon points="280,180 550,180 550,310 280,310" fill="#64748b"/>
+  <!-- Dirty cracks on left -->
+  <path d="M 80,210 Q 140,240 180,220 T 260,260" fill="none" stroke="#0f172a" stroke-width="4"/>
+  <ellipse cx="140" cy="240" rx="35" ry="15" fill="#1e293b" opacity="0.6"/>
+
+  <!-- High-Pressure Jet Spray Wand -->
+  <g transform="translate(180, 70)">
+    <line x1="0" y1="0" x2="110" y2="110" stroke="#94a3b8" stroke-width="6" stroke-linecap="round"/>
+    <rect x="-10" y="-10" width="24" height="24" rx="4" fill="#ea580c"/>
+    <polygon points="110,110 118,118 108,128 100,120" fill="#ea580c"/>
+    <!-- Water Spray Cone -->
+    <polygon points="115,115 280,180 200,210" fill="url(#sprayGrad)"/>
+  </g>
+
+  <!-- Water Droplets & Splatters -->
+  <circle cx="270" cy="175" r="5" fill="#38bdf8"/>
+  <circle cx="290" cy="165" r="4" fill="#38bdf8"/>
+  <circle cx="250" cy="195" r="6" fill="#38bdf8"/>
+  <circle cx="310" cy="185" r="5" fill="#bae6fd"/>
+
+  <!-- Mechanical Grinder Disc Outline -->
+  <g transform="translate(460, 240)">
+    <ellipse cx="0" cy="0" rx="45" ry="18" fill="#1e293b" stroke="#f59e0b" stroke-width="3"/>
+    <ellipse cx="0" cy="0" rx="14" ry="6" fill="#ea580c"/>
+    <!-- Spark lines -->
+    <line x1="20" y1="-12" x2="40" y2="-25" stroke="#f59e0b" stroke-width="2"/>
+    <line x1="30" y1="5" x2="55" y2="10" stroke="#f59e0b" stroke-width="2"/>
+  </g>
+
+  <!-- Tag -->
+  <rect x="30" y="25" width="200" height="32" rx="6" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+  <text x="45" y="46" fill="#38bdf8" font-size="12" font-family="monospace" font-weight="bold">SURFACE PREPARATION</text>
+</svg>

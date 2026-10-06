@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="clearSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0284c7"/>
+      <stop offset="100%" stop-color="#60a5fa"/>
+    </linearGradient>
+    <linearGradient id="shingleNew" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <pattern id="shinglePattern" width="40" height="24" patternUnits="userSpaceOnUse">
+      <rect width="40" height="24" fill="#1e293b"/>
+      <rect x="0" y="0" width="38" height="22" fill="#334155"/>
+      <line x1="0" y1="23" x2="40" y2="23" stroke="#0f172a" stroke-width="2"/>
+      <line x1="20" y1="0" x2="20" y2="22" stroke="#0f172a" stroke-width="1.5"/>
+    </pattern>
+  </defs>
+  <!-- Clear Blue Sky -->
+  <rect width="800" height="500" fill="url(#clearSky)"/>
+
+  <!-- Chimney with Fresh Flashing & Counter-flashing -->
+  <polygon points="480,100 550,80 550,180 480,195" fill="#991b1b"/>
+  <!-- New Ice & Water Shield / Metal Step Flashing -->
+  <polygon points="475,185 555,170 560,200 470,215" fill="#ea580c"/>
+
+  <!-- House Roof Pitch Structure with New Shingles -->
+  <polygon points="400,60 50,380 750,380" fill="url(#shinglePattern)"/>
+
+  <!-- Heavy-Duty Ridge Cap Along the Peak -->
+  <polygon points="400,50 380,70 420,70" fill="#0f172a"/>
+  <line x1="400" y1="50" x2="400" y2="75" stroke="#ea580c" stroke-width="3"/>
+
+  <!-- Aluminum Drip Edge Along Eaves -->
+  <line x1="45" y1="382" x2="755" y2="382" stroke="#ea580c" stroke-width="6"/>
+
+  <!-- Dimensional Texture Highlights -->
+  <polygon points="200,280 350,280 340,320 180,320" fill="#475569" opacity="0.3"/>
+  <polygon points="450,230 580,230 570,270 435,270" fill="#475569" opacity="0.3"/>
+
+  <!-- Success Label -->
+  <rect x="30" y="30" width="310" height="50" rx="8" fill="#15803d" opacity="0.95"/>
+  <text x="50" y="62" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="18">✓ AFTER: ARCHITECTURAL RE-ROOF</text>
+  <rect x="30" y="90" width="310" height="30" rx="6" fill="#0f172a" opacity="0.8"/>
+  <text x="40" y="110" fill="#bbf7d0" font-family="system-ui, sans-serif" font-size="13">Class 4 Impact Resistant • 25-Yr Leak-Proof</text>
+</svg>

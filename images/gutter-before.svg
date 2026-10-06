@@ -1,0 +1,46 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="cloudySky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="100%" stop-color="#334155"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#cloudySky)"/>
+
+  <!-- Fascia Board & Eaves -->
+  <polygon points="0,100 800,100 800,160 0,160" fill="#78350f"/>
+  <polygon points="0,160 800,160 800,190 0,190" fill="#451a03"/>
+  <!-- Water Rot Streaks on Fascia -->
+  <line x1="250" y1="190" x2="250" y2="280" stroke="#1c1917" stroke-width="8" opacity="0.7"/>
+  <line x1="480" y1="190" x2="480" y2="310" stroke="#1c1917" stroke-width="12" opacity="0.7"/>
+
+  <!-- Wall Siding -->
+  <rect x="0" y="190" width="800" height="310" fill="#94a3b8"/>
+  <line x1="0" y1="240" x2="800" y2="240" stroke="#64748b" stroke-width="2"/>
+  <line x1="0" y1="290" x2="800" y2="290" stroke="#64748b" stroke-width="2"/>
+  <line x1="0" y1="340" x2="800" y2="340" stroke="#64748b" stroke-width="2"/>
+  <line x1="0" y1="390" x2="800" y2="390" stroke="#64748b" stroke-width="2"/>
+
+  <!-- Sagging, Bent Gutter -->
+  <path d="M 0,170 Q 380,240 800,170" fill="none" stroke="#71717a" stroke-width="32" stroke-linecap="round"/>
+  <!-- Rust Stains -->
+  <path d="M 300,205 Q 380,225 460,205" fill="none" stroke="#ea580c" stroke-width="20"/>
+
+  <!-- Overflowing Debris, Dirt & Leaves -->
+  <ellipse cx="380" cy="205" rx="140" ry="22" fill="#3f2e18"/>
+  <!-- Fallen Leaves Clumping -->
+  <circle cx="340" cy="195" r="14" fill="#a16207"/>
+  <circle cx="370" cy="190" r="16" fill="#65a30d"/>
+  <circle cx="410" cy="195" r="18" fill="#b45309"/>
+  <circle cx="440" cy="200" r="12" fill="#78350f"/>
+
+  <!-- Overflowing Water Cascading Down Wall -->
+  <path d="M 360,215 C 360,260 350,300 355,420" fill="none" stroke="#38bdf8" stroke-width="10" opacity="0.8"/>
+  <path d="M 390,218 C 390,270 405,320 400,430" fill="none" stroke="#38bdf8" stroke-width="8" opacity="0.8"/>
+
+  <!-- Warning Label -->
+  <rect x="30" y="30" width="280" height="50" rx="8" fill="#991b1b" opacity="0.9"/>
+  <text x="50" y="62" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="18">⚠️ BEFORE: CLOGGED GUTTER</text>
+  <rect x="30" y="90" width="310" height="30" rx="6" fill="#0f172a" opacity="0.8"/>
+  <text x="40" y="110" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="13">Fascia rot, overflowing debris &amp; rust corrosion</text>
+</svg>

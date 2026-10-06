@@ -1,0 +1,43 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="terraceCardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="puCoat" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#fb923c"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#terraceCardBg)"/>
+  <!-- Multi-Layer Terrace Cross Section -->
+  <!-- Layer 1: Concrete Substrate -->
+  <polygon points="50,260 550,260 550,300 50,300" fill="#475569"/>
+  <text x="70" y="285" fill="#e2e8f0" font-size="11" font-weight="bold" font-family="system-ui">CONCRETE DECK</text>
+  <!-- Layer 2: Epoxy Primer -->
+  <polygon points="50,240 550,240 550,260 50,260" fill="#0284c7"/>
+  <text x="70" y="255" fill="#ffffff" font-size="11" font-weight="bold" font-family="system-ui">PENETRATING PRIMER</text>
+  <!-- Layer 3: Polyurethane Membrane -->
+  <polygon points="50,215 550,215 550,240 50,240" fill="url(#puCoat)"/>
+  <text x="70" y="232" fill="#ffffff" font-size="11" font-weight="bold" font-family="system-ui">ELASTOMERIC PU WATERPROOF MEMBRANE</text>
+  <!-- Layer 4: UV Aliphatic Topcoat -->
+  <polygon points="50,195 550,195 550,215 50,215" fill="#38bdf8"/>
+  <text x="70" y="210" fill="#0f172a" font-size="11" font-weight="bold" font-family="system-ui">UV-RESISTANT TOP SEAL (ZERO PONDING)</text>
+
+  <!-- Water Repelling Splash Graphics -->
+  <g transform="translate(420, 140)">
+    <circle cx="0" cy="0" r="28" fill="#38bdf8" opacity="0.3"/>
+    <circle cx="0" cy="0" r="18" fill="#0284c7"/>
+    <circle cx="20" cy="-20" r="7" fill="#38bdf8"/>
+    <circle cx="-15" cy="-25" r="5" fill="#38bdf8"/>
+    <!-- Shield Icon Over Drop -->
+    <path d="M -8,-6 L 8,-6 L 8,4 Q 8,12 0,16 Q -8,12 -8,4 Z" fill="#ffffff"/>
+  </g>
+
+  <!-- Roller Applicator -->
+  <rect x="220" y="80" width="80" height="24" rx="6" fill="#ea580c"/>
+  <path d="M 260,104 L 260,140 L 290,160" fill="none" stroke="#e2e8f0" stroke-width="4"/>
+
+  <text x="300" y="345" fill="#f8fafc" font-size="20" font-weight="800" font-family="system-ui" text-anchor="middle">Terrace &amp; Flat Deck Waterproofing</text>
+  <text x="300" y="370" fill="#94a3b8" font-size="13" font-family="system-ui" text-anchor="middle">Seamless Liquid Membranes &amp; Crystalline Sealants</text>
+</svg>

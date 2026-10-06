@@ -1,0 +1,50 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="sunnySkyGutter" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8"/>
+      <stop offset="100%" stop-color="#bae6fd"/>
+    </linearGradient>
+    <linearGradient id="gutterMetal" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+  </defs>
+  <rect width="800" height="500" fill="url(#sunnySkyGutter)"/>
+
+  <!-- Restored Fascia Board with Fresh Waterproof Paint -->
+  <polygon points="0,100 800,100 800,160 0,160" fill="#f8fafc"/>
+  <polygon points="0,160 800,160 800,190 0,190" fill="#e2e8f0"/>
+
+  <!-- Siding Wall (Clean, Free of Water Stains) -->
+  <rect x="0" y="190" width="800" height="310" fill="#f1f5f9"/>
+  <line x1="0" y1="240" x2="800" y2="240" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="0" y1="290" x2="800" y2="290" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="0" y1="340" x2="800" y2="340" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="0" y1="390" x2="800" y2="390" stroke="#cbd5e1" stroke-width="2"/>
+
+  <!-- Perfectly Straight Seamless Extruded Aluminum Gutter -->
+  <rect x="0" y="160" width="800" height="35" rx="4" fill="url(#gutterMetal)"/>
+  <line x1="0" y1="160" x2="800" y2="160" stroke="#ea580c" stroke-width="3"/>
+
+  <!-- Leaf-Proof Diamond Micro-Mesh Screen Cover Along Gutter -->
+  <rect x="0" y="155" width="800" height="8" fill="#64748b"/>
+  <!-- Leaf filter perforation lines -->
+  <line x1="0" y1="158" x2="800" y2="158" stroke="#ffffff" stroke-width="1.5" stroke-dasharray="4,4"/>
+
+  <!-- Precision Downspout Drop with Clean Brackets -->
+  <rect x="680" y="190" width="34" height="310" rx="3" fill="url(#gutterMetal)"/>
+  <!-- Heavy Duty Mounting Brackets -->
+  <rect x="674" y="240" width="46" height="10" rx="2" fill="#ea580c"/>
+  <rect x="674" y="360" width="46" height="10" rx="2" fill="#ea580c"/>
+
+  <!-- Downspout Elbow Water Exit Directional Flow -->
+  <polygon points="680,480 740,495 730,500 680,500" fill="#1e293b"/>
+  <path d="M 720,490 Q 750,495 780,490" fill="none" stroke="#0284c7" stroke-width="4"/>
+
+  <!-- Success Label -->
+  <rect x="30" y="30" width="310" height="50" rx="8" fill="#15803d" opacity="0.95"/>
+  <text x="50" y="62" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="18">✓ AFTER: SEAMLESS LEAF-GUARD</text>
+  <rect x="30" y="90" width="310" height="30" rx="6" fill="#0f172a" opacity="0.8"/>
+  <text x="40" y="110" fill="#bbf7d0" font-family="system-ui, sans-serif" font-size="13">Lifetime Clog-Free Guarantee • 0.032 Heavy Gauge</text>
+</svg>

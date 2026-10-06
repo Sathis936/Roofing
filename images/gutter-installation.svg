@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="gutterCardBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="metalGutter" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#64748b"/>
+      <stop offset="50%" stop-color="#cbd5e1"/>
+      <stop offset="100%" stop-color="#475569"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#gutterCardBg)"/>
+
+  <!-- Eave Overhang -->
+  <polygon points="40,80 560,80 540,140 60,140" fill="#334155"/>
+  <!-- Seamless Gutter Channel -->
+  <rect x="50" y="140" width="500" height="45" rx="6" fill="url(#metalGutter)"/>
+  <!-- Gutter Lip -->
+  <line x1="50" y1="140" x2="550" y2="140" stroke="#ea580c" stroke-width="4"/>
+
+  <!-- Downspout Section -->
+  <rect x="440" y="185" width="40" height="110" rx="3" fill="url(#metalGutter)"/>
+  <rect x="435" y="220" width="50" height="8" rx="2" fill="#ea580c"/>
+
+  <!-- Micro-mesh Screen -->
+  <line x1="50" y1="135" x2="550" y2="135" stroke="#ffffff" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Clean Water Flow Arrows -->
+  <path d="M 120,160 L 440,160" fill="none" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+  <path d="M 460,160 L 460,280" fill="none" stroke="#38bdf8" stroke-width="5" stroke-linecap="round"/>
+  <!-- Splash Repelled Leaves -->
+  <circle cx="200" cy="115" r="10" fill="#f59e0b"/>
+  <path d="M 195,115 Q 215,100 235,110" fill="none" stroke="#ea580c" stroke-width="2"/>
+
+  <!-- Shield Badge -->
+  <g transform="translate(180, 240)">
+    <circle cx="0" cy="0" r="35" fill="#ea580c"/>
+    <text x="0" y="6" fill="#ffffff" font-size="14" font-weight="900" font-family="system-ui" text-anchor="middle">100%</text>
+    <text x="0" y="20" fill="#fef08a" font-size="9" font-weight="bold" font-family="system-ui" text-anchor="middle">CLOG-FREE</text>
+  </g>
+
+  <text x="300" y="345" fill="#f8fafc" font-size="20" font-weight="800" font-family="system-ui" text-anchor="middle">Seamless Gutter &amp; Drainage</text>
+  <text x="300" y="370" fill="#94a3b8" font-size="13" font-family="system-ui" text-anchor="middle">Heavy-Gauge Aluminum, Leaf Shields &amp; Downspouts</text>
+</svg>

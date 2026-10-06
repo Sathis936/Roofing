@@ -1,0 +1,122 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 560" width="700" height="560">
+  <defs>
+    <linearGradient id="heroCardBg" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="50%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#0b1120"/>
+    </linearGradient>
+    <linearGradient id="heroRoofGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#334155"/>
+      <stop offset="50%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="orangeAccent" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+    <linearGradient id="waterShieldGlow" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.4"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.05"/>
+    </linearGradient>
+    <filter id="cardShadow" x="-10%" y="-10%" width="120%" height="120%">
+      <feDropShadow dx="0" dy="12" stdDeviation="16" flood-color="#000000" flood-opacity="0.45"/>
+    </filter>
+  </defs>
+
+  <!-- Container Frame with Rounded Corners & Subtle Border -->
+  <rect x="10" y="10" width="680" height="540" rx="24" fill="url(#heroCardBg)" stroke="#334155" stroke-width="2" filter="url(#cardShadow)"/>
+
+  <!-- Architectural Building Facade -->
+  <!-- Main Wall Structure -->
+  <rect x="90" y="270" width="520" height="230" rx="6" fill="#1e293b" stroke="#334155" stroke-width="2"/>
+  
+  <!-- Architectural Windows with Interior Glow -->
+  <rect x="130" y="320" width="100" height="70" rx="4" fill="#0f172a" stroke="#475569" stroke-width="2"/>
+  <line x1="180" y1="320" x2="180" y2="390" stroke="#475569" stroke-width="2"/>
+  <line x1="130" y1="355" x2="230" y2="355" stroke="#475569" stroke-width="2"/>
+  <rect x="135" y="325" width="40" height="26" fill="#fef08a" opacity="0.15"/>
+
+  <rect x="470" y="320" width="100" height="70" rx="4" fill="#0f172a" stroke="#475569" stroke-width="2"/>
+  <line x1="520" y1="320" x2="520" y2="390" stroke="#475569" stroke-width="2"/>
+  <line x1="470" y1="355" x2="570" y2="355" stroke="#475569" stroke-width="2"/>
+  <rect x="525" y="325" width="40" height="26" fill="#fef08a" opacity="0.15"/>
+
+  <!-- Modern Entrance Porch -->
+  <rect x="290" y="360" width="120" height="140" fill="#0f172a" stroke="#ea580c" stroke-width="2"/>
+  <rect x="310" y="380" width="80" height="120" fill="#1e293b"/>
+  <circle cx="375" cy="445" r="4" fill="#f97316"/>
+
+  <!-- Steep Pitch Architectural Roof Plane (Left & Center) -->
+  <polygon points="260,80 50,270 470,270" fill="url(#heroRoofGrad)" stroke="#475569" stroke-width="2"/>
+  
+  <!-- Shingle Texture Grid -->
+  <line x1="80" y1="240" x2="440" y2="240" stroke="#0f172a" stroke-width="3"/>
+  <line x1="120" y1="210" x2="400" y2="210" stroke="#0f172a" stroke-width="3"/>
+  <line x1="160" y1="180" x2="360" y2="180" stroke="#0f172a" stroke-width="3"/>
+  <line x1="200" y1="150" x2="320" y2="150" stroke="#0f172a" stroke-width="3"/>
+  <line x1="240" y1="115" x2="280" y2="115" stroke="#0f172a" stroke-width="3"/>
+
+  <!-- Flat Concrete Terrace Deck (Right Side) -->
+  <polygon points="430,220 620,220 620,270 430,270" fill="#334155" stroke="#475569" stroke-width="2"/>
+  <!-- 5-Layer Liquid PU Coating Line on Terrace Deck -->
+  <line x1="430" y1="220" x2="620" y2="220" stroke="url(#orangeAccent)" stroke-width="6"/>
+  <!-- Terrace Parapet & Glass Balustrade -->
+  <rect x="440" y="180" width="170" height="40" rx="3" fill="#38bdf8" opacity="0.25" stroke="#38bdf8" stroke-width="1.5"/>
+  <line x1="480" y1="180" x2="480" y2="220" stroke="#38bdf8" stroke-width="1.5"/>
+  <line x1="530" y1="180" x2="530" y2="220" stroke="#38bdf8" stroke-width="1.5"/>
+  <line x1="580" y1="180" x2="580" y2="220" stroke="#38bdf8" stroke-width="1.5"/>
+
+  <!-- Protective Waterproof Shield Cone Over Entire Roof -->
+  <path d="M 260,60 L 40,275 L 630,275 Z" fill="url(#waterShieldGlow)" stroke="#38bdf8" stroke-width="2" stroke-dasharray="6,4"/>
+
+  <!-- Heavy Duty Seamless Gutter Line Along Eaves -->
+  <line x1="45" y1="272" x2="475" y2="272" stroke="#ea580c" stroke-width="7"/>
+  <rect x="55" y="275" width="16" height="225" rx="3" fill="#334155" stroke="#ea580c" stroke-width="2"/>
+
+  <!-- Master Roofer Engineer Figure (Foreground Left) -->
+  <g transform="translate(100, 310)">
+    <!-- Body / Safety Jacket -->
+    <rect x="25" y="65" width="70" height="90" rx="10" fill="#ea580c"/>
+    <!-- Safety Reflective Vest Stripes -->
+    <rect x="35" y="65" width="12" height="90" fill="#ffffff" opacity="0.8"/>
+    <rect x="68" y="65" width="12" height="90" fill="#ffffff" opacity="0.8"/>
+    <rect x="25" y="115" width="70" height="14" fill="#ffffff" opacity="0.8"/>
+    <!-- Head & Hard Hat -->
+    <circle cx="60" cy="35" r="22" fill="#fed7aa"/>
+    <path d="M 32,30 Q 60,8 88,30 Z" fill="#f59e0b"/>
+    <rect x="28" y="28" width="64" height="6" rx="2" fill="#d97706"/>
+    <!-- Tablet / Thermal Scanner Device in Hand -->
+    <rect x="75" y="90" width="45" height="60" rx="5" fill="#0f172a" stroke="#38bdf8" stroke-width="2"/>
+    <rect x="80" y="96" width="35" height="42" fill="#0284c7" opacity="0.8"/>
+    <circle cx="97" cy="117" r="6" fill="#f59e0b"/>
+    <!-- Hand holding tablet -->
+    <circle cx="80" cy="120" r="8" fill="#fed7aa"/>
+  </g>
+
+  <!-- FLOATING BADGE 1: 25-Year Certified Warranty (Top Right) -->
+  <g transform="translate(450, 45)">
+    <rect x="0" y="0" width="200" height="70" rx="12" fill="#0f172a" stroke="#ea580c" stroke-width="2"/>
+    <circle cx="35" cy="35" r="20" fill="url(#orangeAccent)"/>
+    <path d="M 28,35 L 33,40 L 43,30" fill="none" stroke="#ffffff" stroke-width="3" stroke-linecap="round" stroke-linejoin="round"/>
+    <text x="65" y="30" fill="#ffffff" font-size="14" font-weight="900" font-family="system-ui, sans-serif">25-YEAR</text>
+    <text x="65" y="48" fill="#f97316" font-size="11" font-weight="800" font-family="system-ui, sans-serif">LEAK-PROOF PLEDGE</text>
+  </g>
+
+  <!-- FLOATING BADGE 2: 100% Watertight Tested (Bottom Right) -->
+  <g transform="translate(390, 430)">
+    <rect x="0" y="0" width="260" height="65" rx="12" fill="#0f172a" stroke="#10b981" stroke-width="2"/>
+    <circle cx="32" cy="32" r="18" fill="#10b981"/>
+    <text x="32" y="37" fill="#ffffff" font-size="14" font-weight="bold" font-family="system-ui" text-anchor="middle">✓</text>
+    <text x="60" y="28" fill="#ffffff" font-size="13" font-weight="800" font-family="system-ui, sans-serif">48h Flood Test Passed</text>
+    <text x="60" y="46" fill="#a7f3d0" font-size="11" font-family="system-ui, sans-serif">Zero Seepage Guaranteed</text>
+  </g>
+
+  <!-- FLOATING BADGE 3: Infrared Drone Certified (Top Left) -->
+  <g transform="translate(45, 45)">
+    <rect x="0" y="0" width="180" height="50" rx="10" fill="#0f172a" stroke="#38bdf8" stroke-width="1.5"/>
+    <circle cx="28" cy="25" r="12" fill="#0284c7"/>
+    <text x="28" y="29" fill="#ffffff" font-size="11" font-weight="bold" font-family="system-ui" text-anchor="middle">⚡</text>
+    <text x="50" y="25" fill="#ffffff" font-size="11" font-weight="bold" font-family="system-ui, sans-serif">FLIR 4K Thermal</text>
+    <text x="50" y="39" fill="#38bdf8" font-size="9" font-family="system-ui, sans-serif">AI Sub-surface Audit</text>
+  </g>
+</svg>

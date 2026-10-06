@@ -1,0 +1,51 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
+  <defs>
+    <linearGradient id="skyGrad" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#1e293b"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <linearGradient id="terraceBefore" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#475569"/>
+      <stop offset="50%" stop-color="#334155"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="puddleGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#38bdf8" stop-opacity="0.3"/>
+      <stop offset="100%" stop-color="#0284c7" stop-opacity="0.8"/>
+    </linearGradient>
+  </defs>
+  <!-- Background Wall & Sky -->
+  <rect width="800" height="500" fill="url(#skyGrad)"/>
+  
+  <!-- Parapet Wall Background -->
+  <polygon points="0,120 800,120 800,240 0,240" fill="#334155"/>
+  <line x1="0" y1="240" x2="800" y2="240" stroke="#1e293b" stroke-width="4"/>
+
+  <!-- Concrete Terrace Floor with Perspective -->
+  <polygon points="0,240 800,240 800,500 0,500" fill="url(#terraceBefore)"/>
+
+  <!-- Concrete Cracks & Deterioration -->
+  <path d="M 120,280 Q 180,310 240,300 T 380,340 T 450,320" fill="none" stroke="#0f172a" stroke-width="4" stroke-linecap="round"/>
+  <path d="M 240,300 L 260,360 L 290,390" fill="none" stroke="#0f172a" stroke-width="3"/>
+  <path d="M 450,320 L 520,380 L 560,440" fill="none" stroke="#0f172a" stroke-width="4"/>
+  <path d="M 600,270 Q 640,310 680,360" fill="none" stroke="#0f172a" stroke-width="3"/>
+
+  <!-- Staining and Efflorescence -->
+  <ellipse cx="280" cy="330" rx="90" ry="35" fill="#1e293b" opacity="0.6"/>
+  <ellipse cx="530" cy="370" rx="120" ry="45" fill="#1e293b" opacity="0.7"/>
+
+  <!-- Stagnant Standing Water Puddles (Seepage Hazard) -->
+  <ellipse cx="280" cy="330" rx="75" ry="25" fill="url(#puddleGrad)"/>
+  <ellipse cx="530" cy="370" rx="100" ry="35" fill="url(#puddleGrad)"/>
+  <ellipse cx="140" cy="420" rx="55" ry="20" fill="url(#puddleGrad)"/>
+
+  <!-- Water Ripple Lines -->
+  <ellipse cx="280" cy="330" rx="40" ry="12" fill="none" stroke="#bae6fd" stroke-width="2" opacity="0.6"/>
+  <ellipse cx="530" cy="370" rx="60" ry="18" fill="none" stroke="#bae6fd" stroke-width="2" opacity="0.6"/>
+
+  <!-- Warning Annotation Overlay -->
+  <rect x="30" y="30" width="260" height="50" rx="8" fill="#991b1b" opacity="0.9"/>
+  <text x="50" y="62" fill="#ffffff" font-family="system-ui, sans-serif" font-weight="bold" font-size="18">⚠️ BEFORE: SEVERE SEEPAGE</text>
+  <rect x="30" y="90" width="310" height="30" rx="6" fill="#0f172a" opacity="0.8"/>
+  <text x="40" y="110" fill="#fca5a5" font-family="system-ui, sans-serif" font-size="13">Cracked concrete deck &amp; standing pond water</text>
+</svg>

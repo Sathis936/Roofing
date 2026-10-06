@@ -1,0 +1,60 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 700 450" width="700" height="450">
+  <defs>
+    <linearGradient id="thermalBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#020617"/>
+      <stop offset="100%" stop-color="#0f172a"/>
+    </linearGradient>
+    <radialGradient id="heatHot" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" stop-color="#ef4444" stop-opacity="0.9"/>
+      <stop offset="60%" stop-color="#f59e0b" stop-opacity="0.6"/>
+      <stop offset="100%" stop-color="#3b82f6" stop-opacity="0"/>
+    </radialGradient>
+  </defs>
+  <rect width="700" height="450" fill="url(#thermalBg)"/>
+
+  <!-- Roof Heat Map Grid (Simulated Infrared FLIR view) -->
+  <polygon points="50,180 650,180 650,420 50,420" fill="#1e1b4b"/>
+  <!-- Grid Lines -->
+  <line x1="50" y1="240" x2="650" y2="240" stroke="#312e81" stroke-width="2"/>
+  <line x1="50" y1="300" x2="650" y2="300" stroke="#312e81" stroke-width="2"/>
+  <line x1="50" y1="360" x2="650" y2="360" stroke="#312e81" stroke-width="2"/>
+  <line x1="200" y1="180" x2="200" y2="420" stroke="#312e81" stroke-width="2"/>
+  <line x1="350" y1="180" x2="350" y2="420" stroke="#312e81" stroke-width="2"/>
+  <line x1="500" y1="180" x2="500" y2="420" stroke="#312e81" stroke-width="2"/>
+
+  <!-- Thermal Hotspot (Moisture Trap Detected under Membrane) -->
+  <ellipse cx="280" cy="310" rx="110" ry="60" fill="url(#heatHot)"/>
+  <circle cx="280" cy="310" r="4" fill="#ffffff"/>
+  <!-- Crosshairs -->
+  <line x1="260" y1="310" x2="300" y2="310" stroke="#ffffff" stroke-width="2"/>
+  <line x1="280" y1="290" x2="280" y2="330" stroke="#ffffff" stroke-width="2"/>
+  <rect x="295" y="275" width="130" height="26" rx="4" fill="#0f172a" stroke="#ef4444" stroke-width="1.5"/>
+  <text x="305" y="293" fill="#fca5a5" font-size="11" font-weight="bold" font-family="monospace">MOISTURE: 82%</text>
+
+  <!-- Inspection Drone in Flight -->
+  <g transform="translate(480, 90)">
+    <!-- Drone Body -->
+    <ellipse cx="0" cy="0" rx="45" ry="18" fill="#334155" stroke="#ea580c" stroke-width="2"/>
+    <ellipse cx="0" cy="-3" rx="20" ry="10" fill="#0f172a"/>
+    <!-- Rotors Arms -->
+    <line x1="-50" y1="0" x2="-80" y2="-20" stroke="#94a3b8" stroke-width="4"/>
+    <line x1="50" y1="0" x2="80" y2="-20" stroke="#94a3b8" stroke-width="4"/>
+    <line x1="-40" y1="5" x2="-70" y2="25" stroke="#94a3b8" stroke-width="4"/>
+    <line x1="40" y1="5" x2="70" y2="25" stroke="#94a3b8" stroke-width="4"/>
+    <!-- Propellers Blur -->
+    <ellipse cx="-80" cy="-20" rx="28" ry="4" fill="#38bdf8" opacity="0.7"/>
+    <ellipse cx="80" cy="-20" rx="28" ry="4" fill="#38bdf8" opacity="0.7"/>
+    <ellipse cx="-70" cy="25" rx="28" ry="4" fill="#38bdf8" opacity="0.7"/>
+    <ellipse cx="70" cy="25" rx="28" ry="4" fill="#38bdf8" opacity="0.7"/>
+    <!-- 4K Thermal Camera Gimbal -->
+    <rect x="-10" y="16" width="20" height="16" rx="3" fill="#0284c7"/>
+    <circle cx="0" cy="24" r="5" fill="#f59e0b"/>
+    <!-- Scanning Laser Cone -->
+    <polygon points="0,28 -220,230 -140,230" fill="#38bdf8" opacity="0.15"/>
+  </g>
+
+  <!-- HUD Telemetry Display -->
+  <rect x="30" y="30" width="280" height="60" rx="6" fill="#0f172a" stroke="#334155" stroke-width="1.5"/>
+  <text x="45" y="55" fill="#38bdf8" font-size="12" font-family="monospace" font-weight="bold">AI THERMAL SCANNER v4.2</text>
+  <text x="45" y="75" fill="#10b981" font-size="11" font-family="monospace">● SCANNING SUB-SURFACE WATER</text>
+</svg>

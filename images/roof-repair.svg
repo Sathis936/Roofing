@@ -1,0 +1,29 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 400" width="600" height="400">
+  <defs>
+    <linearGradient id="repairSky" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="accentOrange" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="400" fill="url(#repairSky)"/>
+  <!-- Roof Framework -->
+  <polygon points="300,50 60,320 540,320" fill="#334155"/>
+  <polygon points="300,50 60,320 300,320" fill="#1e293b" opacity="0.4"/>
+  <!-- Shingle Layers -->
+  <line x1="120" y1="260" x2="480" y2="260" stroke="#0f172a" stroke-width="4"/>
+  <line x1="170" y1="200" x2="430" y2="200" stroke="#0f172a" stroke-width="4"/>
+  <line x1="230" y1="130" x2="370" y2="130" stroke="#0f172a" stroke-width="4"/>
+  <!-- Waterproof Underlayment Roll Out -->
+  <polygon points="280,160 380,140 410,240 260,250" fill="#0284c7" opacity="0.85"/>
+  <line x1="280" y1="160" x2="260" y2="250" stroke="#38bdf8" stroke-width="3"/>
+  <text x="290" y="210" fill="#ffffff" font-size="12" font-family="system-ui" font-weight="bold">SYNTHETIC BARRIER</text>
+  <!-- Flashing Seal Badge -->
+  <circle cx="460" cy="120" r="45" fill="url(#accentOrange)"/>
+  <path d="M 445,120 L 455,130 L 480,105" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  <text x="300" y="365" fill="#f8fafc" font-size="20" font-weight="800" font-family="system-ui" text-anchor="middle">Emergency Leak &amp; Roof Repair</text>
+  <text x="300" y="388" fill="#94a3b8" font-size="13" font-family="system-ui" text-anchor="middle">100% Watertight Flashing &amp; Structural Restoration</text>
+</svg>

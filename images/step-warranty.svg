@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="600" height="350">
+  <defs>
+    <linearGradient id="warrBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="goldGrad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#f59e0b"/>
+      <stop offset="50%" stop-color="#fbbf24"/>
+      <stop offset="100%" stop-color="#d97706"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" fill="url(#warrBg)"/>
+
+  <!-- Official Certificate Parchment Paper -->
+  <rect x="150" y="35" width="300" height="275" rx="8" fill="#ffffff" stroke="#cbd5e1" stroke-width="2"/>
+  <rect x="160" y="45" width="280" height="255" fill="none" stroke="#ea580c" stroke-width="1.5" stroke-dasharray="6,4"/>
+
+  <!-- Certificate Heading & Lines -->
+  <rect x="230" y="65" width="140" height="14" rx="3" fill="#0f172a"/>
+  <rect x="250" y="85" width="100" height="8" rx="2" fill="#94a3b8"/>
+  <line x1="180" y1="115" x2="420" y2="115" stroke="#e2e8f0" stroke-width="2"/>
+  <line x1="180" y1="135" x2="380" y2="135" stroke="#cbd5e1" stroke-width="2"/>
+  <line x1="180" y1="155" x2="410" y2="155" stroke="#cbd5e1" stroke-width="2"/>
+
+  <!-- Golden 25-Year Embossed Seal -->
+  <g transform="translate(300, 210)">
+    <!-- Ribbon Ribs -->
+    <polygon points="-25,30 -35,70 -15,55 0,70 -15,30" fill="#b45309"/>
+    <polygon points="25,30 35,70 15,55 0,70 15,30" fill="#b45309"/>
+    <!-- Gold Medallion -->
+    <circle cx="0" cy="0" r="46" fill="url(#goldGrad)" stroke="#78350f" stroke-width="2"/>
+    <circle cx="0" cy="0" r="38" fill="none" stroke="#ffffff" stroke-width="2" stroke-dasharray="4,3"/>
+    <text x="0" y="-4" fill="#78350f" font-size="22" font-weight="900" font-family="system-ui" text-anchor="middle">25</text>
+    <text x="0" y="12" fill="#78350f" font-size="9" font-weight="900" font-family="system-ui" text-anchor="middle">YEARS</text>
+    <text x="0" y="24" fill="#78350f" font-size="7" font-weight="bold" font-family="system-ui" text-anchor="middle">WARRANTY</text>
+  </g>
+
+  <!-- Handover Shield on Side -->
+  <g transform="translate(490, 80)">
+    <path d="M 0,0 L 40,0 L 40,35 Q 40,70 0,90 Q -40,70 -40,35 L -40,0 Z" fill="#ea580c"/>
+    <path d="M -15,35 L -5,45 L 20,20" fill="none" stroke="#ffffff" stroke-width="5" stroke-linecap="round" stroke-linejoin="round"/>
+  </g>
+
+  <!-- Tag -->
+  <rect x="30" y="25" width="220" height="32" rx="6" fill="#0f172a" stroke="#f59e0b" stroke-width="1.5"/>
+  <text x="45" y="46" fill="#f59e0b" font-size="12" font-family="monospace" font-weight="bold">LEGAL WARRANTY HANDOVER</text>
+</svg>

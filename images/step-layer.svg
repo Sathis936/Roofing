@@ -1,0 +1,45 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 600 350" width="600" height="350">
+  <defs>
+    <linearGradient id="layerBg" x1="0%" y1="0%" x2="0%" y2="100%">
+      <stop offset="0%" stop-color="#0f172a"/>
+      <stop offset="100%" stop-color="#1e293b"/>
+    </linearGradient>
+    <linearGradient id="puOrange" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" stop-color="#ea580c"/>
+      <stop offset="100%" stop-color="#f97316"/>
+    </linearGradient>
+  </defs>
+  <rect width="600" height="350" fill="url(#layerBg)"/>
+
+  <!-- Multi-layered Cross Section Deck -->
+  <!-- Layer 1: Concrete Substrate -->
+  <polygon points="50,250 550,250 550,290 50,290" fill="#475569"/>
+  <!-- Layer 2: Primer -->
+  <polygon points="50,225 550,225 550,250 50,250" fill="#0284c7"/>
+  <!-- Layer 3: Polyurethane Membrane (applied) -->
+  <polygon points="50,195 380,195 380,225 50,225" fill="url(#puOrange)"/>
+  <!-- Geotextile Mesh texture lines -->
+  <line x1="50" y1="210" x2="380" y2="210" stroke="#ffedd5" stroke-width="2" stroke-dasharray="4,4"/>
+
+  <!-- Paint Roller in Action applying the liquid PU layer -->
+  <g transform="translate(370, 130)">
+    <!-- Roller Cylinder -->
+    <rect x="0" y="30" width="80" height="35" rx="8" fill="url(#puOrange)"/>
+    <line x1="10" y1="40" x2="70" y2="40" stroke="#ffffff" stroke-width="2" opacity="0.5"/>
+    <!-- Metal Arm & Handle -->
+    <path d="M 40,30 L 40,0 L 90,-20 L 140,-50" fill="none" stroke="#cbd5e1" stroke-width="6" stroke-linecap="round"/>
+    <rect x="120" y="-65" width="40" height="18" rx="4" fill="#0f172a" transform="rotate(-30 120 -65)"/>
+  </g>
+
+  <!-- Liquid Coating Splashes & Smooth Wet Sheen -->
+  <ellipse cx="220" cy="195" rx="45" ry="6" fill="#fb923c" opacity="0.6"/>
+  <ellipse cx="320" cy="195" rx="30" ry="5" fill="#fb923c" opacity="0.6"/>
+
+  <!-- Layer Labels -->
+  <rect x="70" y="70" width="180" height="26" rx="4" fill="#0f172a" stroke="#ea580c" stroke-width="1.5"/>
+  <text x="80" y="87" fill="#ea580c" font-size="11" font-weight="bold" font-family="system-ui">1. ELASTOMERIC PU COAT</text>
+  <rect x="70" y="105" width="180" height="26" rx="4" fill="#0f172a" stroke="#0284c7" stroke-width="1.5"/>
+  <text x="80" y="122" fill="#38bdf8" font-size="11" font-weight="bold" font-family="system-ui">2. PENETRATING PRIMER</text>
+  <rect x="70" y="140" width="180" height="26" rx="4" fill="#0f172a" stroke="#64748b" stroke-width="1.5"/>
+  <text x="80" y="157" fill="#cbd5e1" font-size="11" font-weight="bold" font-family="system-ui">3. CONCRETE SUBSTRATE</text>
+</svg>

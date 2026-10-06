@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Contractor Services | Roof Repair, Terrace Waterproofing &amp; Gutters | Vanguard</title>
+  <meta name="description" content="Comprehensive roofing and waterproofing contractor services: emergency roof repair, seamless liquid PU terrace waterproofing, gutter installations, and commercial coatings.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="apple-touch-icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- SITE HEADER & NAVBAR -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- BRAND LOGO & NAME (Same color across header and footer) -->
+        <a href="index.html" class="brand-link" title="Vanguard Roofing & Waterproofing Homepage">
+          <div class="brand-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              <path d="M12 2v4"></path>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">Vanguard</span>
+            <span class="brand-tagline">Roofing &amp; Waterproofing</span>
+          </div>
+        </a>
+
+        <!-- MAIN NAVIGATION LINKS -->
+        <ul class="nav-menu" id="navbarMenu">
+          <li class="nav-item has-dropdown">
+            <a href="index.html" class="nav-link dropdown-toggle" id="homeDropdown" aria-haspopup="true" aria-expanded="false">
+              <span>Home</span>
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+              <li>
+                <a href="index.html" class="dropdown-link">
+                  <span class="dropdown-link-badge">1</span>
+                  <div class="dropdown-link-info">
+                    <span class="dropdown-link-title">Home 1</span>
+                    <span class="dropdown-link-sub">Residential &amp; Leak-Proof</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="home-2.html" class="dropdown-link">
+                  <span class="dropdown-link-badge">2</span>
+                  <div class="dropdown-link-info">
+                    <span class="dropdown-link-title">Home 2</span>
+                    <span class="dropdown-link-sub">Commercial &amp; Industrial</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link active">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Before &amp; After</a></li>
+          <li><a href="pricing.html" class="nav-link">Pricing Guide</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <!-- Mobile Drawer Utility Controls (RTL & Theme) -->
+          <li class="nav-menu-controls">
+            <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle text direction RTL or LTR" title="Switch text direction">
+              <span class="theme-icon">🌐</span>
+              <span class="label-text">RTL</span>
+            </button>
+            <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Switch color theme">
+              <span class="theme-icon">🌙</span>
+              <span class="label-text">Dark</span>
+            </button>
+          </li>
+        </ul>
+
+        <!-- UTILITY CONTROLS: RTL, THEME & AUTH -->
+        <div class="navbar-actions">
+          <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle text direction RTL or LTR" title="Switch text direction">
+            <span class="theme-icon">🌐</span>
+            <span class="label-text">RTL</span>
+          </button>
+          <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Switch color theme">
+            <span class="theme-icon">🌙</span>
+            <span class="label-text">Dark</span>
+          </button>
+          <div class="nav-auth-container" id="navAuthContainer">
+            <!-- Dynamically injected login/logout -->
+            <a href="login.html" class="btn btn-primary btn-sm login-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Login</span>
+            </a>
+          </div>
+          <button type="button" class="mobile-toggle" id="mobileMenuToggle" aria-label="Open mobile navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO BANNER -->
+    <section class="hero-section" style="padding: 4rem 0 3.5rem 0;">
+      <div class="container text-center">
+        <div class="hero-pill" style="margin-bottom: 1rem;">
+          <span>Comprehensive Contractor Capabilities</span>
+        </div>
+        <h1 class="hero-title" style="margin-bottom: 1rem;">
+          Specialized Roofing &amp; <span>Waterproofing</span> Services
+        </h1>
+        <p class="hero-lead" style="max-width: 750px; margin: 0 auto 2rem auto;">
+          From emergency leak mitigation to full-scale terrace polyurethane membranes and continuous seamless gutters, every project is backed by our signature <strong>25-Year Leak-Proof Warranty</strong>.
+        </p>
+        <div style="display: flex; justify-content: center; gap: 1rem; flex-wrap: wrap;">
+          <a href="#repair" class="btn btn-primary btn-sm">Roof Repair</a>
+          <a href="#terrace" class="btn btn-primary btn-sm">Terrace Waterproofing</a>
+          <a href="#gutter" class="btn btn-primary btn-sm">Gutter Systems</a>
+          <a href="#process" class="btn btn-outline-white btn-sm">Our 6-Step Process</a>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILED SERVICE 1: ROOF REPAIR -->
+    <section class="section-padding" id="repair">
+      <div class="container">
+        <div class="contact-layout" style="align-items: center;">
+          <div>
+            <span class="section-subtitle">24/7 Rapid Leak Containment</span>
+            <h2 class="section-title">Precision Roof Repair &amp; Flashing Restoration</h2>
+            <p class="section-desc" style="margin-bottom: 1.5rem;">
+              Roof leaks rarely travel straight down; water migrates along trusses, soaking thermal insulation and rotting structural plywood decking before appearing on your ceiling. Our repair protocols pinpoint and seal the root vulnerability.
+            </p>
+            <div class="pricing-features">
+              <div class="pricing-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div>
+                  <strong>Missing &amp; Storm-Damaged Shingles:</strong> Class-4 impact-resistant architectural shingle replacements matched precisely to your existing roof pitch.
+                </div>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div>
+                  <strong>Chimney &amp; Skylight Step Flashing:</strong> Replaced welded counter-flashing with heavy-gauge aluminum and high-durability elastomeric caulking.
+                </div>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div>
+                  <strong>Valley &amp; Pipe Boot Sealing:</strong> High-stress water channels reinforced with ice-and-water self-adhering polymer membranes.
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+              <a href="contact.html?service=repair" class="btn btn-primary">Book Emergency Roof Repair</a>
+              <a href="gallery.html" class="btn btn-outline">View Repair Case Studies</a>
+            </div>
+          </div>
+          <div>
+            <img src="images/services-repair.jpg" alt="Certified roofing contractor repairing architectural roof and installing flashing" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); border: 1px solid var(--border-color); width: 100%; height: 380px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILED SERVICE 2: TERRACE WATERPROOFING -->
+    <section class="section-padding" id="terrace" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="contact-layout" style="align-items: center;">
+          <div>
+            <img src="images/services-terrace.jpg" alt="Terrace waterproofing 5 layer polyurethane liquid membrane application" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); border: 1px solid var(--border-color); width: 100%; height: 380px; object-fit: cover;">
+          </div>
+          <div>
+            <span class="section-subtitle">Zero Ponding • Zero Leaks</span>
+            <h2 class="section-title">Terrace &amp; Balcony Waterproofing Systems</h2>
+            <p class="section-desc" style="margin-bottom: 1.5rem;">
+              Flat terraces and balconies are vulnerable to thermal expansion fractures, standing water pools, and porous screed degradation. We apply an unbroken <strong>5-layer liquid polyurethane (PU) membrane</strong> that moves flexibly with the building.
+            </p>
+            <div class="pricing-features">
+              <div class="pricing-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div>
+                  <strong>Deep Penetrating Primer:</strong> Seals concrete pores and creates an unbreakable chemical bond with the substrate.
+                </div>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div>
+                  <strong>Fiberglass Geotextile Reinforcement:</strong> Bridges active movement cracks up to 3mm without rupturing or tearing.
+                </div>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div>
+                  <strong>Aliphatic UV Protective Topcoat:</strong> Reflects solar radiation, resists foot traffic, and withstands permanent standing water without peeling.
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+              <a href="contact.html?service=terrace" class="btn btn-primary">Schedule Terrace Inspection</a>
+              <a href="pricing.html" class="btn btn-outline">Calculate Square Foot Cost</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- DETAILED SERVICE 3: GUTTER INSTALLATION -->
+    <section class="section-padding" id="gutter">
+      <div class="container">
+        <div class="contact-layout" style="align-items: center;">
+          <div>
+            <span class="section-subtitle">Foundation &amp; Eave Protection</span>
+            <h2 class="section-title">Seamless Aluminum Gutters &amp; Leaf Defense</h2>
+            <p class="section-desc" style="margin-bottom: 1.5rem;">
+              Clogged and sagging gutters are the #1 cause of rotten fascia boards, foundation shifts, and basement water intrusion. We custom-extrude seamless gutters directly at your property for an exact custom fit with zero leak-prone joints.
+            </p>
+            <div class="pricing-features">
+              <div class="pricing-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div>
+                  <strong>Continuous Seamless Extrusion:</strong> Fabricated on-site using rust-proof 0.032 heavy-gauge aluminum in 24 factory-baked color finishes.
+                </div>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div>
+                  <strong>Surgical Micro-Mesh Leaf Guards:</strong> Blocks pine needles, grit, and oak leaves while taking on up to 22 inches of rainfall per hour.
+                </div>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <div>
+                  <strong>Oversized 3x4" High-Flow Downspouts:</strong> Discharges torrential stormwater away from perimeter landscaping and basement walls.
+                </div>
+              </div>
+            </div>
+            <div style="display: flex; gap: 1rem; margin-top: 2rem;">
+              <a href="contact.html?service=gutter" class="btn btn-primary">Book Gutter Estimate</a>
+              <a href="gallery.html" class="btn btn-outline">See Gutter Upgrades</a>
+            </div>
+          </div>
+          <div>
+            <img src="images/services-gutters.jpg" alt="Seamless aluminum gutter system and leaf protection guard installation" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); border: 1px solid var(--border-color); width: 100%; height: 380px; object-fit: cover;">
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- 6-STEP CONTRACTOR ROADMAP -->
+    <section class="section-padding" id="process" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Our Engineering Standard</span>
+          <h2 class="section-title">The 6-Step Watertight Delivery Process</h2>
+          <p class="section-desc">
+            How we ensure every single roofing and waterproofing project delivers zero leaks for 25 years.
+          </p>
+        </div>
+
+        <div class="services-grid">
+          <!-- Step 1 -->
+          <article class="process-card">
+            <div class="process-img-wrapper">
+              <img src="images/step-drone.jpg" alt="Thermal Drone Scan" class="process-card-img" loading="lazy">
+              <span class="process-step-badge">01</span>
+            </div>
+            <div class="process-card-body">
+              <h3 class="process-card-title">Thermal Drone Scan</h3>
+              <p class="process-card-desc">
+                Non-invasive infrared scanning identifies hidden moisture traps and roof deck saturation before physical work begins.
+              </p>
+            </div>
+          </article>
+
+          <!-- Step 2 -->
+          <article class="process-card">
+            <div class="process-img-wrapper">
+              <img src="images/step-estimate.jpg" alt="Fixed-Price Estimate" class="process-card-img" loading="lazy">
+              <span class="process-step-badge">02</span>
+            </div>
+            <div class="process-card-body">
+              <h3 class="process-card-title">Fixed-Price Estimate</h3>
+              <p class="process-card-desc">
+                Itemized scope of work with transparent materials list, timelines, and no surprise add-on charges.
+              </p>
+            </div>
+          </article>
+
+          <!-- Step 3 -->
+          <article class="process-card">
+            <div class="process-img-wrapper">
+              <img src="images/step-prep.jpg" alt="Surface Preparation" class="process-card-img" loading="lazy">
+              <span class="process-step-badge">03</span>
+            </div>
+            <div class="process-card-body">
+              <h3 class="process-card-title">Surface Preparation</h3>
+              <p class="process-card-desc">
+                High-pressure washing, mechanical grinding, rotten wood replacement, and epoxy fillet coving at all parapet junctions.
+              </p>
+            </div>
+          </article>
+
+          <!-- Step 4 -->
+          <article class="process-card">
+            <div class="process-img-wrapper">
+              <img src="images/step-layer.jpg" alt="Multi-Layer Application" class="process-card-img" loading="lazy">
+              <span class="process-step-badge">04</span>
+            </div>
+            <div class="process-card-body">
+              <h3 class="process-card-title">Multi-Layer Application</h3>
+              <p class="process-card-desc">
+                Installation of synthetic underlayments, seamless polyurethane liquid coats, and flashings per strict NRCA codes.
+              </p>
+            </div>
+          </article>
+
+          <!-- Step 5 -->
+          <article class="process-card">
+            <div class="process-img-wrapper">
+              <img src="images/step-flood.jpg" alt="48-Hour Flood Test" class="process-card-img" loading="lazy">
+              <span class="process-step-badge">05</span>
+            </div>
+            <div class="process-card-body">
+              <h3 class="process-card-title">48-Hour Flood Test</h3>
+              <p class="process-card-desc">
+                We intentionally pond water on completed terraces for 48 continuous hours to prove 100% water tightness before sign-off.
+              </p>
+            </div>
+          </article>
+
+          <!-- Step 6 -->
+          <article class="process-card">
+            <div class="process-img-wrapper">
+              <img src="images/step-warranty.jpg" alt="25-Year Warranty Handover" class="process-card-img" loading="lazy">
+              <span class="process-step-badge">06</span>
+            </div>
+            <div class="process-card-body">
+              <h3 class="process-card-title">25-Year Warranty Handover</h3>
+              <p class="process-card-desc">
+                Transferable legal warranty certificate issued to the property owner, fully registered in our digital portal.
+              </p>
+            </div>
+          </article>
+        </div>
+      </div>
+    </section>
+
+    <!-- CALL TO ACTION BANNER -->
+    <section class="section-padding">
+      <div class="container text-center">
+        <div style="background: linear-gradient(135deg, #0f172a, #1e293b); color: #fff; padding: 3.5rem; border-radius: var(--radius-lg); border-left: 6px solid var(--brand-color);">
+          <h2 style="font-size: 2.25rem; font-weight: 900; margin-bottom: 1rem;">Ready For A Leak-Proof Property?</h2>
+          <p style="color: #cbd5e1; max-width: 600px; margin: 0 auto 2rem auto; font-size: 1.1rem;">
+            Schedule your free, zero-obligation thermal drone inspection today. Our licensed roofing engineers are ready to assist.
+          </p>
+          <a href="contact.html" class="btn btn-primary btn-lg">Schedule Free Inspection Now</a>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- STRICTLY CONSTANT FOOTER ACROSS EVERY PAGE & CENTERED COPYRIGHTS -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand & Description (Brand name is same color in Header & Footer) -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link" title="Vanguard Roofing & Waterproofing">
+            <div class="brand-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                <path d="M12 2v4"></path>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">Vanguard</span>
+              <span class="brand-tagline">Roofing &amp; Waterproofing</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Certified licensed roofing contractor and advanced waterproofing engineers specializing in permanent leak prevention, terrace membranes, seamless gutters, and thermal infrared diagnostics.
+          </p>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+            <li><a href="index.html">Home 1 (Residential)</a></li>
+            <li><a href="home-2.html">Home 2 (Commercial)</a></li>
+            <li><a href="about.html">About Vanguard</a></li>
+            <li><a href="services.html">All Contractor Services</a></li>
+            <li><a href="gallery.html">Before &amp; After Gallery</a></li>
+            <li><a href="pricing.html">Pricing Guide (₹ INR)</a></li>
+            <li><a href="contact.html">Contact &amp; Free Inspection</a></li>
+          </ul>
+        </div>
+
+        <!-- Waterproofing Services -->
+        <div>
+          <h4 class="footer-title">Our Specialties</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#repair">Emergency Roof Repair</a></li>
+            <li><a href="services.html#terrace">Terrace &amp; Balcony Coating</a></li>
+            <li><a href="services.html#gutter">Seamless Gutters &amp; Guards</a></li>
+            <li><a href="services.html#commercial">Commercial Metal Roofing</a></li>
+            <li><a href="services.html#thermal">Thermal Leak Detection</a></li>
+            <li><a href="pricing.html#faq">25-Year Guarantee Terms</a></li>
+          </ul>
+        </div>
+
+        <!-- 24/7 Emergency Dispatch Line -->
+        <div>
+          <h4 class="footer-title">Emergency Hotline</h4>
+          <p class="text-muted" style="font-size: 0.9rem;">
+            Got an active storm leak or roof cave-in hazard? Call our 24/7 emergency dispatch team.
+          </p>
+          <div class="footer-emergency-box">
+            <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 800; color: #f8fafc; letter-spacing: 0.05em;">24/7 RAPID DISPATCH</span>
+            <a href="tel:18007663482" class="emergency-phone">1-800-ROOF-GUARD</a>
+            <span style="font-size: 0.8rem; color: #cbd5e1;">Average arrival time: 30 minutes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REQUIREMENT: Centered Copyright Section -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright-text">
+          &copy; 2026 Vanguard Roofing &amp; Waterproofing Contractor Inc. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>

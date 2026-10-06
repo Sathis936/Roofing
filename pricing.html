@@ -1,0 +1,467 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Pricing Guide &amp; Instant Cost Estimator | Vanguard Roofing &amp; Waterproofing</title>
+  <meta name="description" content="Transparent roofing and waterproofing contractor pricing guide. Interactive cost calculator, package tiers, and 25-year warranty details.">
+  <link rel="icon" type="image/svg+xml" href="images/favicon.svg">
+  <link rel="apple-touch-icon" href="images/favicon.svg">
+  <link rel="stylesheet" href="css/style.css">
+</head>
+<body>
+
+  <!-- SITE HEADER & NAVBAR -->
+  <header class="site-header">
+    <div class="container">
+      <nav class="navbar" aria-label="Main Navigation">
+        <!-- BRAND LOGO & NAME (Same color across header and footer) -->
+        <a href="index.html" class="brand-link" title="Vanguard Roofing & Waterproofing Homepage">
+          <div class="brand-icon">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              <path d="M12 2v4"></path>
+            </svg>
+          </div>
+          <div class="brand-text">
+            <span class="brand-name">Vanguard</span>
+            <span class="brand-tagline">Roofing &amp; Waterproofing</span>
+          </div>
+        </a>
+
+        <!-- MAIN NAVIGATION LINKS -->
+        <ul class="nav-menu" id="navbarMenu">
+          <li class="nav-item has-dropdown">
+            <a href="index.html" class="nav-link dropdown-toggle" id="homeDropdown" aria-haspopup="true" aria-expanded="false">
+              <span>Home</span>
+              <svg class="dropdown-chevron" width="12" height="12" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+                <polyline points="6 9 12 15 18 9"></polyline>
+              </svg>
+            </a>
+            <ul class="dropdown-menu" aria-labelledby="homeDropdown">
+              <li>
+                <a href="index.html" class="dropdown-link">
+                  <span class="dropdown-link-badge">1</span>
+                  <div class="dropdown-link-info">
+                    <span class="dropdown-link-title">Home 1</span>
+                    <span class="dropdown-link-sub">Residential &amp; Leak-Proof</span>
+                  </div>
+                </a>
+              </li>
+              <li>
+                <a href="home-2.html" class="dropdown-link">
+                  <span class="dropdown-link-badge">2</span>
+                  <div class="dropdown-link-info">
+                    <span class="dropdown-link-title">Home 2</span>
+                    <span class="dropdown-link-sub">Commercial &amp; Industrial</span>
+                  </div>
+                </a>
+              </li>
+            </ul>
+          </li>
+          <li><a href="about.html" class="nav-link">About</a></li>
+          <li><a href="services.html" class="nav-link">Services</a></li>
+          <li><a href="gallery.html" class="nav-link">Before &amp; After</a></li>
+          <li><a href="pricing.html" class="nav-link active">Pricing Guide</a></li>
+          <li><a href="contact.html" class="nav-link">Contact</a></li>
+          <!-- Mobile Drawer Utility Controls (RTL & Theme) -->
+          <li class="nav-menu-controls">
+            <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle text direction RTL or LTR" title="Switch text direction">
+              <span class="theme-icon">🌐</span>
+              <span class="label-text">RTL</span>
+            </button>
+            <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Switch color theme">
+              <span class="theme-icon">🌙</span>
+              <span class="label-text">Dark</span>
+            </button>
+          </li>
+        </ul>
+
+        <!-- UTILITY CONTROLS: RTL, THEME & AUTH -->
+        <div class="navbar-actions">
+          <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle text direction RTL or LTR" title="Switch text direction">
+            <span class="theme-icon">🌐</span>
+            <span class="label-text">RTL</span>
+          </button>
+          <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Switch color theme">
+            <span class="theme-icon">🌙</span>
+            <span class="label-text">Dark</span>
+          </button>
+          <div class="nav-auth-container" id="navAuthContainer">
+            <a href="login.html" class="btn btn-primary btn-sm login-btn">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
+                <circle cx="12" cy="7" r="4"></circle>
+              </svg>
+              <span>Login</span>
+            </a>
+          </div>
+          <button type="button" class="mobile-toggle" id="mobileMenuToggle" aria-label="Open mobile navigation menu" aria-expanded="false">
+            <span></span>
+            <span></span>
+            <span></span>
+          </button>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <main>
+    <!-- PAGE HERO -->
+    <section class="hero-section" style="padding: 4rem 0 3.5rem 0;">
+      <div class="container text-center">
+        <div class="hero-pill" style="margin-bottom: 1rem;">
+          <span>100% Upfront Transparency</span>
+        </div>
+        <h1 class="hero-title" style="margin-bottom: 1rem;">
+          Transparent <span>Pricing Guide</span> &amp; Cost Estimator
+        </h1>
+        <p class="hero-lead" style="max-width: 750px; margin: 0 auto 2rem auto;">
+          No hidden fees, no sales high-pressure tactics. View standard package tiers or use our interactive calculator to forecast your project investment.
+        </p>
+      </div>
+    </section>
+
+    <!-- INTERACTIVE PRICING CALCULATOR -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Real-Time Estimation</span>
+          <h2 class="section-title">Instant Roof &amp; Waterproofing Cost Calculator</h2>
+          <p class="section-desc">Adjust the parameters below to compute an accurate estimated cost range.</p>
+        </div>
+
+        <div class="estimator-card">
+          <div class="estimator-grid">
+            <div>
+              <div class="form-group">
+                <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.5rem;">
+                  <label class="form-label" for="calcArea" style="margin: 0;">Roof / Terrace Area (Sq Ft):</label>
+                  <strong id="calcAreaDisplay" class="text-brand" style="font-size: 1.25rem;">1,500 sq ft</strong>
+                </div>
+                <input type="range" id="calcArea" min="200" max="6000" step="50" value="1500" class="form-control" style="cursor: pointer;" aria-label="Square footage slider">
+                <div style="display: flex; justify-content: space-between; font-size: 0.8rem; color: var(--text-muted); margin-top: 0.35rem;">
+                  <span>200 sq ft</span>
+                  <span>3,000 sq ft</span>
+                  <span>6,000+ sq ft</span>
+                </div>
+              </div>
+
+              <div class="form-grid">
+                <div class="form-group">
+                  <label class="form-label" for="calcService">Service Type</label>
+                  <select id="calcService" class="form-control">
+                    <option value="terrace" selected>Terrace 5-Layer PU Waterproofing</option>
+                    <option value="repair">Emergency Roof Leak Repair</option>
+                    <option value="gutter">Seamless Gutters &amp; Micro-Mesh</option>
+                    <option value="complete">Complete Re-Roofing &amp; Decking</option>
+                  </select>
+                </div>
+
+                <div class="form-group">
+                  <label class="form-label" for="calcRoofType">Substrate / Material</label>
+                  <select id="calcRoofType" class="form-control">
+                    <option value="concrete" selected>Flat Concrete Deck / Terrace</option>
+                    <option value="shingle">Asphalt / Architectural Shingles</option>
+                    <option value="metal">Commercial Standing Seam Metal</option>
+                    <option value="tile">Clay / Concrete Roof Tiles</option>
+                  </select>
+                </div>
+              </div>
+
+              <p style="font-size: 0.85rem; color: var(--text-muted); margin-top: 1rem;">
+                *Estimate includes surface preparation, commercial grade waterproofing primer, membrane coats, and legal warranty certification.
+              </p>
+            </div>
+
+            <!-- Calculated Output Box -->
+            <div class="calculator-result-box">
+              <span style="font-size: 0.85rem; text-transform: uppercase; letter-spacing: 0.08em; font-weight: 800; color: #cbd5e1;">ESTIMATED PRICE RANGE</span>
+              <div class="calc-estimate-price" id="calcEstimateResult">₹75,000 - ₹95,000</div>
+              <div style="margin-bottom: 1.5rem; display: flex; justify-content: center; gap: 1.5rem; font-size: 0.9rem;">
+                <div>
+                  <span style="color: #94a3b8; display: block;">Warranty:</span>
+                  <strong id="calcWarrantyResult" style="color: #38bdf8;">20-Year Heavy Duty</strong>
+                </div>
+                <div>
+                  <span style="color: #94a3b8; display: block;">Est. Duration:</span>
+                  <strong id="calcTimelineResult" style="color: #38bdf8;">3 - 5 Days</strong>
+                </div>
+              </div>
+              <a href="contact.html" class="btn btn-primary" style="width: 100%;">Lock In This Estimate With Free Inspection</a>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TIERED CONTRACTOR PACKAGES -->
+    <section class="section-padding" style="background-color: var(--bg-secondary);">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Package Pricing</span>
+          <h2 class="section-title">Standard Service Tiers</h2>
+          <p class="section-desc">Fixed rates for common contractor scopes with guaranteed leak-proof assurance.</p>
+        </div>
+
+        <div class="pricing-grid">
+          <!-- Tier 1: Minor Leak Repair -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-tier-name">Rapid Leak Fix</h3>
+              <div class="pricing-price">₹4,999 <span>/ repair zone</span></div>
+              <p class="text-muted" style="font-size: 0.85rem; margin-top: 0.5rem;">Targeted repair for isolated active leaks and flashing punctures.</p>
+            </div>
+            <div class="pricing-features">
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Same-day emergency dispatch</span>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Replacement of up to 25 damaged shingles</span>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Chimney / pipe boot silicone elastomeric seal</span>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Thermal infrared verification scan</span>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <strong>10-Year Workmanship Warranty</strong>
+              </div>
+            </div>
+            <a href="contact.html?tier=repair" class="btn btn-outline" style="width: 100%;">Book Repair Zone</a>
+          </div>
+
+          <!-- Tier 2: Terrace Waterproofing (Most Popular) -->
+          <div class="pricing-card popular">
+            <div class="pricing-card-badge">Most Requested</div>
+            <div class="pricing-header">
+              <h3 class="pricing-tier-name">Terrace PU Shield</h3>
+              <div class="pricing-price">₹75 <span>/ sq ft</span></div>
+              <p class="text-muted" style="font-size: 0.85rem; margin-top: 0.5rem;">Heavy-duty 5-layer seamless polyurethane membrane for flat roofs &amp; balconies.</p>
+            </div>
+            <div class="pricing-features">
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Mechanical grinding &amp; substrate crack bridging</span>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>High-adhesion epoxy moisture-barrier primer</span>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>2 Coats 100% pure liquid polyurethane membrane</span>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>UV-aliphatic solar-reflective top seal</span>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>48-Hour continuous flood test proof</span>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <strong class="text-brand">20-Year Leak-Proof Guarantee</strong>
+              </div>
+            </div>
+            <a href="contact.html?tier=terrace" class="btn btn-primary" style="width: 100%;">Book Terrace Shield</a>
+          </div>
+
+          <!-- Tier 3: Complete Re-Roofing -->
+          <div class="pricing-card">
+            <div class="pricing-header">
+              <h3 class="pricing-tier-name">Platinum Re-Roof</h3>
+              <div class="pricing-price">₹125 <span>/ sq ft</span></div>
+              <p class="text-muted" style="font-size: 0.85rem; margin-top: 0.5rem;">Complete tear-off, deck inspection, and Class-4 architectural roof build.</p>
+            </div>
+            <div class="pricing-features">
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Complete old roof tear-off &amp; debris disposal</span>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Plywood decking reinforcement / replacement</span>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Full ice-and-water barrier in all valleys &amp; eaves</span>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Lifetime Class-4 impact dimensional shingles</span>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <span>Continuous ridge ventilation system</span>
+              </div>
+              <div class="pricing-feature-item">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="3"><polyline points="20 6 9 17 4 12"></polyline></svg>
+                <strong class="text-brand">25-Year Transferable Legal Warranty</strong>
+              </div>
+            </div>
+            <a href="contact.html?tier=re-roof" class="btn btn-outline" style="width: 100%;">Book Platinum Re-Roof</a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- WHAT AFFECTS PRICING GUIDE -->
+    <section class="section-padding">
+      <div class="container">
+        <div class="section-header">
+          <span class="section-subtitle">Cost Breakdown</span>
+          <h2 class="section-title">What Factors Influence Your Project Cost?</h2>
+          <p class="section-desc">We believe in informed clients. Here are the 4 key variables that shape contractor pricing.</p>
+        </div>
+
+        <div class="cost-breakdown-grid">
+          <div class="pricing-card">
+            <h4 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--text-main);">1. Square Footage &amp; Pitch</h4>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              Steeper roofs require specialized OSHA harness tie-offs, scaffolding, and longer labor hours. Flat terraces require calculated slope leveling to prevent ponding.
+            </p>
+          </div>
+          <div class="pricing-card">
+            <h4 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--text-main);">2. Substrate Condition</h4>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              Hidden water damage to OSB or concrete screeds discovered during our drone scan will require replacement to ensure a solid foundation.
+            </p>
+          </div>
+          <div class="pricing-card">
+            <h4 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--text-main);">3. Membrane System Grade</h4>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              Liquid polyurethane membranes provide 25+ years of elasticity compared to basic acrylic paints that break down under UV rays after 3 seasons.
+            </p>
+          </div>
+          <div class="pricing-card">
+            <h4 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 0.5rem; color: var(--text-main);">4. Flashing &amp; Edge Work</h4>
+            <p class="text-muted" style="font-size: 0.9rem;">
+              The number of chimneys, skylights, parapet corners, and HVAC curbs determines how many linear feet of custom solder or sealants are required.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- FAQ SECTION -->
+    <section class="section-padding" id="faq" style="background-color: var(--bg-secondary);">
+      <div class="container" style="max-width: 850px;">
+        <div class="section-header">
+          <span class="section-subtitle">Frequently Asked Questions</span>
+          <h2 class="section-title">Pricing &amp; Warranty Questions</h2>
+        </div>
+
+        <div style="display: flex; flex-direction: column; gap: 1.25rem;">
+          <div class="pricing-card">
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 0.5rem;">Is the 25-Year Warranty really transferable?</h3>
+            <p class="text-muted" style="font-size: 0.95rem;">
+              Yes! If you sell your home or building, the remaining warranty transfers to the new owner at zero cost upon filling out our simple 1-minute portal transfer form.
+            </p>
+          </div>
+
+          <div class="pricing-card">
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 0.5rem;">Does homeowner's insurance cover roof leak repairs?</h3>
+            <p class="text-muted" style="font-size: 0.95rem;">
+              If your roof damage resulted from storms, hail, high winds, or falling limbs, insurance typically covers the full replacement cost. We provide itemized drone thermal reports directly to your claims adjuster.
+            </p>
+          </div>
+
+          <div class="pricing-card">
+            <h3 style="font-size: 1.15rem; font-weight: 800; margin-bottom: 0.5rem;">Are there any surprise fees or price escalations?</h3>
+            <p class="text-muted" style="font-size: 0.95rem;">
+              Never. Once our certified inspector presents your written proposal after the free thermal inspection, the price is 100% fixed and locked in.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <!-- STRICTLY CONSTANT FOOTER ACROSS EVERY PAGE & CENTERED COPYRIGHTS -->
+  <footer class="site-footer">
+    <div class="container">
+      <div class="footer-top">
+        <!-- Brand & Description (Brand name is same color in Header & Footer) -->
+        <div class="footer-brand">
+          <a href="index.html" class="brand-link" title="Vanguard Roofing & Waterproofing">
+            <div class="brand-icon">
+              <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+                <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+                <polyline points="9 22 9 12 15 12 15 22"></polyline>
+                <path d="M12 2v4"></path>
+              </svg>
+            </div>
+            <div class="brand-text">
+              <span class="brand-name">Vanguard</span>
+              <span class="brand-tagline">Roofing &amp; Waterproofing</span>
+            </div>
+          </a>
+          <p class="footer-desc">
+            Certified licensed roofing contractor and advanced waterproofing engineers specializing in permanent leak prevention, terrace membranes, seamless gutters, and thermal infrared diagnostics.
+          </p>
+        </div>
+
+        <!-- Quick Navigation -->
+        <div>
+          <h4 class="footer-title">Navigation</h4>
+                    <ul class="footer-links">
+            <li><a href="index.html">Home 1 (Residential)</a></li>
+            <li><a href="home-2.html">Home 2 (Commercial)</a></li>
+            <li><a href="about.html">About Vanguard</a></li>
+            <li><a href="services.html">All Contractor Services</a></li>
+            <li><a href="gallery.html">Before &amp; After Gallery</a></li>
+            <li><a href="pricing.html">Pricing Guide (₹ INR)</a></li>
+            <li><a href="contact.html">Contact &amp; Free Inspection</a></li>
+          </ul>
+        </div>
+
+        <!-- Waterproofing Services -->
+        <div>
+          <h4 class="footer-title">Our Specialties</h4>
+          <ul class="footer-links">
+            <li><a href="services.html#repair">Emergency Roof Repair</a></li>
+            <li><a href="services.html#terrace">Terrace &amp; Balcony Coating</a></li>
+            <li><a href="services.html#gutter">Seamless Gutters &amp; Guards</a></li>
+            <li><a href="services.html#commercial">Commercial Metal Roofing</a></li>
+            <li><a href="services.html#thermal">Thermal Leak Detection</a></li>
+            <li><a href="pricing.html#faq">25-Year Guarantee Terms</a></li>
+          </ul>
+        </div>
+
+        <!-- 24/7 Emergency Dispatch Line -->
+        <div>
+          <h4 class="footer-title">Emergency Hotline</h4>
+          <p class="text-muted" style="font-size: 0.9rem;">
+            Got an active storm leak or roof cave-in hazard? Call our 24/7 emergency dispatch team.
+          </p>
+          <div class="footer-emergency-box">
+            <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 800; color: #f8fafc; letter-spacing: 0.05em;">24/7 RAPID DISPATCH</span>
+            <a href="tel:18007663482" class="emergency-phone">1-800-ROOF-GUARD</a>
+            <span style="font-size: 0.8rem; color: #cbd5e1;">Average arrival time: 30 minutes</span>
+          </div>
+        </div>
+      </div>
+    </div>
+
+    <!-- REQUIREMENT: Centered Copyright Section -->
+    <div class="footer-bottom">
+      <div class="container">
+        <p class="copyright-text">
+          &copy; 2026 Vanguard Roofing &amp; Waterproofing Contractor Inc. All rights reserved.
+        </p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="js/main.js"></script>
+</body>
+</html>
