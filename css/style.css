@@ -1684,9 +1684,64 @@ html[dir="rtl"] .ba-label-after {
    -------------------------------------------------------------------------- */
 .pricing-grid {
   display: grid;
-  grid-template-columns: repeat(3, 1fr);
+  grid-template-columns: repeat(auto-fit, minmax(260px, 1fr));
   gap: 1.5rem;
   margin-bottom: 2.5rem;
+}
+
+/* Pricing Rate Matrix Table */
+.pricing-table-wrapper {
+  background: var(--bg-card);
+  border: 1px solid var(--border-color);
+  border-radius: var(--radius-lg);
+  overflow-x: auto;
+  box-shadow: var(--shadow-sm);
+  margin-top: 1.5rem;
+}
+
+.pricing-table {
+  width: 100%;
+  border-collapse: collapse;
+  text-align: left;
+  font-size: 0.88rem;
+}
+
+html[dir="rtl"] .pricing-table {
+  text-align: right;
+}
+
+.pricing-table th {
+  background: var(--bg-secondary);
+  color: var(--text-main);
+  font-weight: 700;
+  padding: 0.85rem 1.1rem;
+  border-bottom: 2px solid var(--border-color);
+  font-size: 0.82rem;
+  text-transform: uppercase;
+  letter-spacing: 0.05em;
+  white-space: nowrap;
+}
+
+.pricing-table td {
+  padding: 0.85rem 1.1rem;
+  border-bottom: 1px solid var(--border-color);
+  color: var(--text-secondary);
+  vertical-align: middle;
+}
+
+.pricing-table tr:last-child td {
+  border-bottom: none;
+}
+
+.pricing-table tr:hover td {
+  background: var(--bg-primary);
+}
+
+.pricing-table .rate-highlight {
+  font-weight: 800;
+  color: var(--brand-color);
+  font-size: 0.95rem;
+  white-space: nowrap;
 }
 
 .cost-breakdown-grid {

@@ -351,6 +351,7 @@ function initEstimator() {
   const priceDisplay = document.getElementById('calcEstimateResult');
   const warrantyDisplay = document.getElementById('calcWarrantyResult');
   const timelineDisplay = document.getElementById('calcTimelineResult');
+  const ctaBtn = document.getElementById('calcCtaBtn');
 
   if (!areaInput || !priceDisplay) return;
 
@@ -381,6 +382,10 @@ function initEstimator() {
       ratePerSqFt = 125;
       warranty = '25-Year Platinum Guarantee';
       timeline = '4 - 7 Days';
+    } else if (service === 'commercial') {
+      ratePerSqFt = 95;
+      warranty = '25-Year Commercial Shield';
+      timeline = '5 - 10 Days';
     }
 
     // Material multiplier
@@ -395,6 +400,9 @@ function initEstimator() {
     priceDisplay.textContent = `₹${lowEst.toLocaleString('en-IN')} - ₹${highEst.toLocaleString('en-IN')}`;
     if (warrantyDisplay) warrantyDisplay.textContent = warranty;
     if (timelineDisplay) timelineDisplay.textContent = timeline;
+    if (ctaBtn) {
+      ctaBtn.href = `contact.html?service=${encodeURIComponent(service)}`;
+    }
   }
 
   areaInput.addEventListener('input', calculate);
@@ -409,6 +417,24 @@ function initEstimator() {
    7. FREE INSPECTION BOOKING FORM & STRICT FIELD VALIDATIONS
    -------------------------------------------------------------------------- */
 function initInspectionBooking() {
+  // Pre-select service from URL parameter if present (e.g. ?service=repair or ?tier=terrace)
+  const urlParams = new URLSearchParams(window.location.search);
+  const serviceParam = (urlParams.get('service') || urlParams.get('tier') || '').toLowerCase();
+  const contactService = document.getElementById('contactService');
+  if (contactService && serviceParam) {
+    if (serviceParam.includes('terrace')) {
+      contactService.value = 'Terrace Waterproofing';
+    } else if (serviceParam.includes('repair')) {
+      contactService.value = 'Roof Repair';
+    } else if (serviceParam.includes('gutter')) {
+      contactService.value = 'Gutter Installation';
+    } else if (serviceParam.includes('re-roof') || serviceParam.includes('complete')) {
+      contactService.value = 'Full Re-Roofing';
+    } else if (serviceParam.includes('commercial')) {
+      contactService.value = 'Commercial Coating';
+    }
+  }
+
   // Global real-time sanitization: Prevent typing alphabetic characters in phone inputs
   const allPhoneInputs = document.querySelectorAll('input[type="tel"], input[name*="phone"], #clientPhone, #contactPhone, #phone');
   allPhoneInputs.forEach(input => {
