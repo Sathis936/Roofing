@@ -1,4 +1,4 @@
-﻿/* ==========================================================================
+/* ==========================================================================
    VANGUARD ROOFING & WATERPROOFING - COMPREHENSIVE STYLESHEET
    Features: Unified Brand Color, Light/Dark Modes, Full RTL Support,
    Responsive Mobile Navigation, Interactive Before/After Sliders, Modal Systems
@@ -1813,8 +1813,8 @@ html[dir="rtl"] .cost-breakdown-grid .pricing-card {
   background: var(--bg-card);
   border: 1px solid var(--border-color);
   border-radius: var(--radius-lg);
-  padding: 1.75rem;
-  box-shadow: var(--shadow-md);
+  padding: 1.5rem 1.6rem;
+  box-shadow: var(--shadow-sm);
 }
 
 .estimator-grid {
@@ -1847,14 +1847,18 @@ html[dir="rtl"] .cost-breakdown-grid .pricing-card {
 .form-grid {
   display: grid;
   grid-template-columns: repeat(2, 1fr);
-  gap: 1.25rem;
+  gap: 0.85rem 1rem;
 }
 
 .form-group {
   display: flex;
   flex-direction: column;
-  gap: 0.4rem;
-  margin-bottom: 1.25rem;
+  gap: 0.35rem;
+  margin-bottom: 0.85rem;
+}
+
+.form-grid .form-group {
+  margin-bottom: 0;
 }
 
 .form-group.full-width {
@@ -1862,7 +1866,7 @@ html[dir="rtl"] .cost-breakdown-grid .pricing-card {
 }
 
 .form-label {
-  font-size: 0.9rem;
+  font-size: 0.85rem;
   font-weight: 700;
   color: var(--text-main);
   display: flex;
@@ -1872,12 +1876,12 @@ html[dir="rtl"] .cost-breakdown-grid .pricing-card {
 
 .form-control {
   width: 100%;
-  padding: 0.8rem 1rem;
+  padding: 0.55rem 0.8rem;
   background-color: var(--bg-primary);
   border: 1.5px solid var(--border-color);
   border-radius: var(--radius-md);
   color: var(--text-main);
-  font-size: 0.95rem;
+  font-size: 0.88rem;
   transition: all var(--transition-fast);
 }
 
@@ -1888,14 +1892,17 @@ html[dir="rtl"] .cost-breakdown-grid .pricing-card {
 }
 
 textarea.form-control {
-  min-height: 110px;
+  min-height: 80px;
   resize: vertical;
 }
 
 .contact-layout {
   display: grid;
-  grid-template-columns: 1.2fr 0.8fr;
-  gap: 3rem;
+  grid-template-columns: 1.15fr 0.85fr;
+  gap: 2rem;
+  max-width: 1040px;
+  margin: 0 auto;
+  align-items: start;
 }
 
 .contact-grid,
@@ -2380,10 +2387,16 @@ html[dir="rtl"] .toast {
 @media (max-width: 1024px) {
   .hero-grid,
   .guarantee-grid,
-  .contact-layout,
   .estimator-grid {
     grid-template-columns: minmax(0, 1fr);
     gap: 2.5rem;
+  }
+
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 600px;
+    margin: 0 auto;
+    gap: 2rem;
   }
 
   .footer-top {
@@ -2700,10 +2713,16 @@ html[dir="rtl"] .toast {
 
   .services-grid,
   .pricing-grid,
-  .contact-layout,
   .estimator-grid,
   .form-grid {
     grid-template-columns: minmax(0, 1fr);
+  }
+
+  .contact-layout {
+    grid-template-columns: minmax(0, 1fr);
+    max-width: 520px;
+    margin: 0 auto;
+    gap: 1.75rem;
   }
 
   .estimator-card,
