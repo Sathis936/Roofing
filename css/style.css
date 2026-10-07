@@ -1,4 +1,4 @@
-/* ==========================================================================
+﻿/* ==========================================================================
    VANGUARD ROOFING & WATERPROOFING - COMPREHENSIVE STYLESHEET
    Features: Unified Brand Color, Light/Dark Modes, Full RTL Support,
    Responsive Mobile Navigation, Interactive Before/After Sliders, Modal Systems
@@ -1205,20 +1205,7 @@ html[dir="rtl"] .service-badge {
 }
 
 .service-icon-floating {
-  width: 42px;
-  height: 42px;
-  background: var(--bg-card);
-  border: 2px solid var(--brand-color);
-  border-radius: var(--radius-md);
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  color: var(--brand-color);
-  margin-top: -34px;
-  margin-bottom: 0.75rem;
-  position: relative;
-  z-index: 3;
-  box-shadow: var(--shadow-md);
+  display: none !important;
 }
 
 .service-title {
