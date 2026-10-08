@@ -1,4 +1,4 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html lang="en" dir="ltr" data-theme="dark">
 <head>
   <meta charset="UTF-8">
@@ -21,13 +21,17 @@
   <header class="site-header">
     <div class="container">
       <nav class="navbar" aria-label="Main Navigation">
-        <!-- BRAND LOGO & IDENTITY -->
-        <a href="index.html" class="brand-link" aria-label="Vanguard Roofing and Waterproofing Home">
+        <!-- BRAND LOGO & NAME (Same color across header and footer) -->
+        <a href="index.html" class="brand-link" title="Vanguard Roofing &amp; Waterproofing Homepage">
           <div class="brand-icon">
-            <img src="images/logo.svg" alt="Vanguard Logo" width="28" height="28">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <path d="M3 9l9-7 9 7v11a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"></path>
+              <polyline points="9 22 9 12 15 12 15 22"></polyline>
+              <path d="M12 2v4"></path>
+            </svg>
           </div>
           <div class="brand-text">
-            <span class="brand-name">VANGUARD</span>
+            <span class="brand-name">Vanguard</span>
             <span class="brand-tagline">Roofing &amp; Waterproofing</span>
           </div>
         </a>
@@ -71,13 +75,11 @@
           <!-- Mobile Drawer Utility Controls (RTL & Theme) -->
           <li class="nav-menu-controls">
             <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle text direction RTL or LTR" title="Switch text direction">
-              <span class="theme-icon">🌐</span>
-              <span class="label-text">RTL</span>
-            </button>
+            <span class="label-text">RTL</span>
+          </button>
             <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Switch color theme">
-              <span class="theme-icon">🌙</span>
-              <span class="label-text">Dark</span>
-            </button>
+            <span class="theme-icon">🌙</span>
+          </button>
           </li>
         </ul>
 
@@ -85,20 +87,18 @@
         <div class="navbar-actions">
           <!-- RTL / LTR Toggle Button -->
           <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle text direction RTL or LTR" title="Switch text direction">
-            <span class="theme-icon">🌐</span>
             <span class="label-text">RTL</span>
           </button>
 
           <!-- Dark / Light Theme Toggle Button -->
           <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Switch color theme">
             <span class="theme-icon">🌙</span>
-            <span class="label-text">Dark</span>
           </button>
 
           <!-- AUTHENTICATION STATE CONTAINER -->
           <div class="nav-auth-container" id="navAuthContainer">
             <a href="login.html" class="btn btn-primary btn-sm login-btn">
-              <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
+              <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
                 <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
                 <circle cx="12" cy="7" r="4"></circle>
               </svg>
@@ -131,7 +131,11 @@
               Engineered Commercial Waterproofing With <span>Zero Downtime.</span>
             </h1>
             <p class="hero-lead">
-              Protecting corporate campuses, high-rise podium terraces, and industrial distribution centers with multi-ply elastomeric polyurea and TPO systems. Backed by an unconditional <strong>25-Year Commercial Transferable Warranty</strong>.
+              Protecting corporate campuses, high-rise podium terraces, and industrial distribution centers with advanced multi-ply elastomeric polyurea and TPO systems.
+Engineered for superior durability, weather resistance, and long-term protection against leaks and moisture damage.
+Our commercial roofing solutions are designed to perform reliably in demanding environments and high-traffic areas.
+Backed by an unconditional   <strong>25-Year Commercial Transferable Warranty</strong>. for lasting confidence and peace of mind.
+ 
             </p>
             <div class="hero-actions">
               <a href="#commercial-rfp" class="btn btn-primary btn-lg">
@@ -462,7 +466,7 @@
     </section>
 
     <!-- 4-STEP COMMERCIAL LIFECYCLE WORKFLOW -->
-    <section class="section-padding">
+    <section class="section-padding" id="commercial-protocol">
       <div class="container">
         <div class="section-header">
           <span class="section-subtitle">Methodical Execution</span>
@@ -475,57 +479,61 @@
         <div class="protocol-grid">
           <!-- Phase 01 -->
           <div class="protocol-card">
-            <div class="protocol-img-wrapper">
+            <a href="phase-1.html" class="protocol-img-wrapper" aria-label="Explore Phase 01 Protocol">
               <span class="protocol-badge">Phase 01</span>
-              <img src="images/step-flood.jpg" alt="Thermal drone scan of a commercial roof reviewed by an inspector" class="protocol-img" loading="lazy">
-            </div>
+              <img src="images/home2-phase-drone.jpg" alt="FLIR thermal radiometric drone scanning a commercial facility roof" class="protocol-img" loading="lazy">
+            </a>
             <div class="protocol-body">
-              <h3 class="protocol-title">FLIR Drone &amp; Core Sampling</h3>
+              <h3 class="protocol-title"><a href="phase-1.html">FLIR Drone &amp; Core Sampling</a></h3>
               <p class="protocol-desc">
                 We deploy thermal radiometric drones and non-destructive dielectric meters to map exact wet insulation boundaries across your entire facility.
               </p>
+              <a href="phase-1.html" class="protocol-link">Explore Phase 01 Protocol &rarr;</a>
             </div>
           </div>
 
           <!-- Phase 02 -->
           <div class="protocol-card">
-            <div class="protocol-img-wrapper">
+            <a href="phase-2.html" class="protocol-img-wrapper" aria-label="Explore Phase 02 Protocol">
               <span class="protocol-badge">Phase 02</span>
-              <img src="images/home2-phase-prep.jpg" alt="Industrial Shot Blasting and Concrete Surface Profiling" class="protocol-img" loading="lazy">
-            </div>
+              <img src="images/home2-phase-prep.jpg" alt="Industrial shot blasting and concrete surface profiling" class="protocol-img" loading="lazy">
+            </a>
             <div class="protocol-body">
-              <h3 class="protocol-title">Surface Profiling &amp; Priming</h3>
+              <h3 class="protocol-title"><a href="phase-2.html">Surface Profiling &amp; Priming</a></h3>
               <p class="protocol-desc">
                 Dust-free captive shot blasting and diamond grinding expose sound concrete (CSP 3-4 profile), followed by high-adhesion epoxy moisture-barrier primers.
               </p>
+              <a href="phase-2.html" class="protocol-link">Explore Phase 02 Protocol &rarr;</a>
             </div>
           </div>
 
           <!-- Phase 03 -->
           <div class="protocol-card">
-            <div class="protocol-img-wrapper">
+            <a href="phase-3.html" class="protocol-img-wrapper" aria-label="Explore Phase 03 Protocol">
               <span class="protocol-badge">Phase 03</span>
-              <img src="images/home2-sol-drone.jpg" alt="Commercial crew applying a continuous waterproof membrane to a flat roof" class="protocol-img" loading="lazy">
-            </div>
+              <img src="images/home2-phase-membrane.jpg" alt="Commercial monolithic polyurea membrane application" class="protocol-img" loading="lazy">
+            </a>
             <div class="protocol-body">
-              <h3 class="protocol-title">Seamless Membrane Application</h3>
+              <h3 class="protocol-title"><a href="phase-3.html">Seamless Membrane Application</a></h3>
               <p class="protocol-desc">
                 Heated high-pressure plural component spray reactors apply monolithic elastomeric polyurea or hot-air welded TPO with continuous thickness monitoring.
               </p>
+              <a href="phase-3.html" class="protocol-link">Explore Phase 03 Protocol &rarr;</a>
             </div>
           </div>
 
           <!-- Phase 04 -->
           <div class="protocol-card">
-            <div class="protocol-img-wrapper">
+            <a href="phase-4.html" class="protocol-img-wrapper" aria-label="Explore Phase 04 Protocol">
               <span class="protocol-badge">Phase 04</span>
-              <img src="images/home2-phase-drone.jpg" alt="Technician carrying out an electronic water test on a commercial rooftop" class="protocol-img" loading="lazy">
-            </div>
+              <img src="images/home2-phase-flood.jpg" alt="72-Hour hydrostatic flood testing and electronic leak detection" class="protocol-img" loading="lazy">
+            </a>
             <div class="protocol-body">
-              <h3 class="protocol-title">72-Hr Hydrostatic Certification</h3>
+              <h3 class="protocol-title"><a href="phase-4.html">72-Hr Hydrostatic Certification</a></h3>
               <p class="protocol-desc">
                 We perform continuous 72-hour flood tests and Electronic Vector Leak Detection (EVLD) to certify 100% pinhole-free integrity prior to warranty sign-off.
               </p>
+              <a href="phase-4.html" class="protocol-link">Explore Phase 04 Protocol &rarr;</a>
             </div>
           </div>
         </div>
@@ -600,22 +608,24 @@
     <section class="section-padding" id="commercial-rfp">
       <div class="container">
         <div class="contact-grid">
-          <!-- Information Column -->
-          <div class="contact-info">
-            <span class="section-subtitle">Direct RFP Desk</span>
-            <h2 class="section-title">Schedule Commercial Facility Inspection &amp; RFP</h2>
-            <p class="section-desc">
-              Require a detailed thermal roof audit, technical specification for tenders, or emergency waterproofing quote? Our senior structural engineers respond within 2 hours.
-            </p>
+          <!-- Information Column as Matching Card -->
+          <div class="contact-info-card contact-info">
+            <div>
+              <span class="section-subtitle">Direct RFP Desk</span>
+              <h2 class="section-title" style="font-size: 1.45rem; margin-bottom: 0.5rem; line-height: 1.3;">Schedule Commercial Facility Inspection &amp; RFP</h2>
+              <p class="section-desc" style="margin-bottom: 0;">
+                Require a detailed thermal roof audit, technical specification for tenders, or emergency waterproofing quote? Our senior structural engineers respond within 2 hours.
+              </p>
+            </div>
 
-            <div class="contact-meta-list">
+            <div class="contact-meta-list" style="margin-top: 1.25rem;">
               <div class="contact-meta-item">
                 <div class="contact-meta-icon">
                   <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path></svg>
                 </div>
                 <div class="contact-meta-text">
                   <strong>Commercial Dispatch Line</strong>
-                  <a href="tel:18007663482">1-800-ROOF-GUARD (Ext. 2)</a>
+                  <a href="tel:18007663482">+1 (800) 766-3482 (Ext. 2)</a>
                 </div>
               </div>
 
@@ -638,6 +648,14 @@
                   <span>Senior structural engineer assigned within 2 hours</span>
                 </div>
               </div>
+            </div>
+
+            <!-- Commercial Callout Pinned to Bottom for Equal Height Alignment -->
+            <div class="coverage-callout" style="background: var(--bg-secondary); border-radius: var(--radius-md); padding: 1.15rem 1.25rem; border-left: 4px solid var(--brand-color); margin-top: auto;">
+              <strong style="display: block; font-size: 0.92rem; margin-bottom: 0.25rem; color: var(--text-main);">Turnkey Commercial Coverage</strong>
+              <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0; line-height: 1.45;">
+                Licensed structural engineers with ISO 9001 certified protocols and 25-Year transferable commercial warranty.
+              </p>
             </div>
           </div>
 
@@ -755,7 +773,7 @@
           </p>
           <div class="footer-emergency-box">
             <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 800; color: #f8fafc; letter-spacing: 0.05em;">24/7 RAPID DISPATCH</span>
-            <a href="tel:18007663482" class="emergency-phone">1-800-ROOF-GUARD</a>
+            <a href="tel:18007663482" class="emergency-phone">+1 (800) 766-3482</a>
             <span style="font-size: 0.8rem; color: #cbd5e1;">Average arrival time: 30 minutes</span>
           </div>
         </div>

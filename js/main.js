@@ -45,19 +45,39 @@ function applyTheme(theme) {
 
   const themeToggles = document.querySelectorAll('.theme-toggle-btn');
   themeToggles.forEach(btn => {
-    const iconContainer = btn.querySelector('.theme-icon');
+    // Remove any text label to keep icon alone
     const labelContainer = btn.querySelector('.label-text');
+    if (labelContainer) {
+      labelContainer.remove();
+    }
+
+    let iconContainer = btn.querySelector('.theme-icon');
+    if (!iconContainer) {
+      iconContainer = document.createElement('span');
+      iconContainer.className = 'theme-icon';
+      btn.appendChild(iconContainer);
+    }
 
     if (theme === 'dark') {
-      if (iconContainer) iconContainer.innerHTML = '☀️';
-      if (labelContainer) labelContainer.textContent = 'Light';
+      iconContainer.innerHTML = '☀️';
       btn.setAttribute('aria-label', 'Switch to Light Mode');
+      btn.setAttribute('title', 'Switch to Light Mode');
     } else {
-      if (iconContainer) iconContainer.innerHTML = '🌙';
-      if (labelContainer) labelContainer.textContent = 'Dark';
+      iconContainer.innerHTML = '🌙';
       btn.setAttribute('aria-label', 'Switch to Dark Mode');
+      btn.setAttribute('title', 'Switch to Dark Mode');
     }
   });
+
+  const calcArea = document.getElementById('calcArea');
+  if (calcArea) {
+    const min = parseFloat(calcArea.min) || 200;
+    const max = parseFloat(calcArea.max) || 6000;
+    const val = parseFloat(calcArea.value) || 1500;
+    const percent = ((val - min) / (max - min)) * 100;
+    const trackBg = theme === 'dark' ? 'rgba(255, 255, 255, 0.18)' : '#e2e8f0';
+    calcArea.style.background = `linear-gradient(to right, var(--brand-color) 0%, var(--brand-color) ${percent}%, ${trackBg} ${percent}%, ${trackBg} 100%)`;
+  }
 }
 
 /* --------------------------------------------------------------------------
@@ -84,11 +104,20 @@ function applyDirection(dir) {
 
   const rtlToggles = document.querySelectorAll('.rtl-toggle-btn');
   rtlToggles.forEach(btn => {
+    // Remove icon to keep RTL text alone
+    const icon = btn.querySelector('.theme-icon');
+    if (icon) {
+      icon.remove();
+    }
+
     const label = btn.querySelector('.label-text');
     if (label) {
       label.textContent = dir === 'rtl' ? 'LTR' : 'RTL';
+    } else {
+      btn.textContent = dir === 'rtl' ? 'LTR' : 'RTL';
     }
     btn.setAttribute('aria-label', dir === 'rtl' ? 'Switch to Left to Right' : 'Switch to Right to Left');
+    btn.setAttribute('title', dir === 'rtl' ? 'Switch to Left to Right' : 'Switch to Right to Left');
   });
 
   // Re-sync before/after sliders on dir change
@@ -403,6 +432,17 @@ function initEstimator() {
     if (ctaBtn) {
       ctaBtn.href = `contact.html?service=${encodeURIComponent(service)}`;
     }
+    function updateSliderFill() {
+      const min = parseFloat(areaInput.min) || 200;
+      const max = parseFloat(areaInput.max) || 6000;
+      const val = parseFloat(areaInput.value) || 1500;
+      const percent = ((val - min) / (max - min)) * 100;
+      const isDark = document.documentElement.getAttribute('data-theme') === 'dark';
+      const trackBg = isDark ? 'rgba(255, 255, 255, 0.18)' : '#e2e8f0';
+      areaInput.style.background = `linear-gradient(to right, var(--brand-color) 0%, var(--brand-color) ${percent}%, ${trackBg} ${percent}%, ${trackBg} 100%)`;
+    }
+
+    updateSliderFill();
   }
 
   areaInput.addEventListener('input', calculate);

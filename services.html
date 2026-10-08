@@ -68,25 +68,21 @@
           <!-- Mobile Drawer Utility Controls (RTL & Theme) -->
           <li class="nav-menu-controls">
             <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle text direction RTL or LTR" title="Switch text direction">
-              <span class="theme-icon">🌐</span>
-              <span class="label-text">RTL</span>
-            </button>
+            <span class="label-text">RTL</span>
+          </button>
             <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Switch color theme">
-              <span class="theme-icon">🌙</span>
-              <span class="label-text">Dark</span>
-            </button>
+            <span class="theme-icon">🌙</span>
+          </button>
           </li>
         </ul>
 
         <!-- UTILITY CONTROLS: RTL, THEME & AUTH -->
         <div class="navbar-actions">
           <button type="button" class="control-btn rtl-toggle-btn" aria-label="Toggle text direction RTL or LTR" title="Switch text direction">
-            <span class="theme-icon">🌐</span>
             <span class="label-text">RTL</span>
           </button>
           <button type="button" class="control-btn theme-toggle-btn" aria-label="Toggle Dark and Light theme" title="Switch color theme">
             <span class="theme-icon">🌙</span>
-            <span class="label-text">Dark</span>
           </button>
           <div class="nav-auth-container" id="navAuthContainer">
             <!-- Dynamically injected login/logout -->
@@ -110,18 +106,18 @@
 
   <main>
     <!-- PAGE HERO BANNER -->
-    <section class="hero-section" style="padding: 4rem 0 3.5rem 0;">
+    <section class="hero-section hero-bg-services" style="background: linear-gradient(rgba(15, 23, 42, 0.70), rgba(15, 23, 42, 0.78)), url('images/services-hero.jpg') center center / cover no-repeat; padding: 4.75rem 0 4.25rem 0;">
       <div class="container text-center">
-        <div class="hero-pill" style="margin-bottom: 1rem;">
+        <div class="hero-pill" style="margin-bottom: 1.25rem;">
           <span>Comprehensive Contractor Capabilities</span>
         </div>
-        <h1 class="hero-title" style="margin-bottom: 1rem;">
+        <h1 class="hero-title" style="margin-bottom: 1.15rem; font-size: 2.5rem;">
           Specialized Roofing &amp; <span>Waterproofing</span> Services
         </h1>
-        <p class="hero-lead" style="max-width: 750px; margin: 0 auto 2rem auto;">
+        <p class="hero-lead" style="max-width: 780px; margin: 0 auto 2.25rem auto;">
           From emergency leak mitigation to full-scale terrace polyurethane membranes and continuous seamless gutters, every project is backed by our signature <strong>25-Year Leak-Proof Warranty</strong>.
         </p>
-        <div style="display: flex; justify-content: center; gap: 0.6rem; flex-wrap: wrap;">
+        <div style="display: flex; justify-content: center; gap: 0.65rem; flex-wrap: wrap;">
           <a href="#repair" class="btn btn-primary btn-sm">Roof Repair</a>
           <a href="#terrace" class="btn btn-primary btn-sm">Terrace Waterproofing</a>
           <a href="#gutter" class="btn btn-primary btn-sm">Seamless Gutters</a>
@@ -135,7 +131,7 @@
     <!-- DETAILED SERVICE 1: ROOF REPAIR -->
     <section class="section-padding" id="repair">
       <div class="container">
-        <div class="contact-layout" style="align-items: center;">
+        <div class="service-detail-layout">
           <div>
             <span class="section-subtitle">24/7 Rapid Leak Containment</span>
             <h2 class="section-title">Precision Roof Repair &amp; Flashing Restoration</h2>
@@ -162,7 +158,7 @@
                 </div>
               </div>
             </div>
-            <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+            <div class="service-cta-row">
               <a href="contact.html?service=repair" class="btn btn-primary">Book Emergency Roof Repair</a>
               <a href="gallery.html" class="btn btn-outline">View Repair Case Studies</a>
             </div>
@@ -177,7 +173,7 @@
     <!-- DETAILED SERVICE 2: TERRACE WATERPROOFING -->
     <section class="section-padding" id="terrace" style="background-color: var(--bg-secondary);">
       <div class="container">
-        <div class="contact-layout" style="align-items: center;">
+        <div class="service-detail-layout">
           <div>
             <img src="images/services-terrace.jpg" alt="Terrace waterproofing 5 layer polyurethane liquid membrane application" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); border: 1px solid var(--border-color); width: 100%; height: 380px; object-fit: cover;">
           </div>
@@ -207,7 +203,7 @@
                 </div>
               </div>
             </div>
-            <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+            <div class="service-cta-row">
               <a href="contact.html?service=terrace" class="btn btn-primary">Schedule Terrace Inspection</a>
               <a href="pricing.html" class="btn btn-outline">Calculate Square Foot Cost</a>
             </div>
@@ -219,7 +215,7 @@
     <!-- DETAILED SERVICE 3: GUTTER INSTALLATION -->
     <section class="section-padding" id="gutter">
       <div class="container">
-        <div class="contact-layout" style="align-items: center;">
+        <div class="service-detail-layout">
           <div>
             <span class="section-subtitle">Foundation &amp; Eave Protection</span>
             <h2 class="section-title">Seamless Aluminum Gutters &amp; Leaf Defense</h2>
@@ -246,7 +242,7 @@
                 </div>
               </div>
             </div>
-            <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+            <div class="service-cta-row">
               <a href="contact.html?service=gutter" class="btn btn-primary">Book Gutter Estimate</a>
               <a href="gallery.html" class="btn btn-outline">See Gutter Upgrades</a>
             </div>
@@ -261,7 +257,7 @@
     <!-- DETAILED SERVICE 4: COMMERCIAL METAL & FLAT ROOFING -->
     <section class="section-padding" id="commercial" style="background-color: var(--bg-secondary);">
       <div class="container">
-        <div class="contact-layout" style="align-items: center;">
+        <div class="service-detail-layout">
           <div>
             <img src="images/home2-sol-metal.jpg" alt="Commercial standing seam metal roofing and heat-welded TPO membranes" style="border-radius: var(--radius-lg); box-shadow: var(--shadow-xl); border: 1px solid var(--border-color); width: 100%; height: 380px; object-fit: cover;">
           </div>
@@ -269,7 +265,7 @@
             <span class="section-subtitle">Zero-Infiltration Commercial Envelopes</span>
             <h2 class="section-title">Commercial Metal &amp; TPO Single-Ply Roofing</h2>
             <p class="section-desc" style="margin-bottom: 1.5rem;">
-              Industrial warehouses, corporate facilities, and distribution centers require commercial-grade durability against high winds, UV exposure, and heavy ponding. We engineer heat-welded 60-mil TPO single-ply systems and architectural standing seam metal panels with concealed fasteners.
+              Industrial warehouses, corporate facilities, and distribution centers require commercial-grade durability against high winds, UV exposure, and heavy ponding. We engineer heat-welded 60-mil single-ply systems and architectural standing seam metal panels with concealed fasteners.
             </p>
             <div class="pricing-features">
               <div class="pricing-feature-item">
@@ -291,10 +287,9 @@
                 </div>
               </div>
             </div>
-            <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+            <div class="service-cta-row">
               <a href="contact.html?service=commercial" class="btn btn-primary">Request Commercial RFP</a>
               <a href="service-metal.html" class="btn btn-outline">Standing Seam Specs</a>
-              <a href="service-tpo.html" class="btn btn-outline">TPO Membrane Specs</a>
             </div>
           </div>
         </div>
@@ -304,7 +299,7 @@
     <!-- DETAILED SERVICE 5: THERMAL DRONE LEAK DETECTION -->
     <section class="section-padding" id="thermal">
       <div class="container">
-        <div class="contact-layout" style="align-items: center;">
+        <div class="service-detail-layout">
           <div>
             <span class="section-subtitle">FLIR Radiometric Precision Diagnostics</span>
             <h2 class="section-title">Thermal Drone Moisture Scans &amp; Leak Audits</h2>
@@ -331,7 +326,7 @@
                 </div>
               </div>
             </div>
-            <div style="display: flex; gap: 1rem; margin-top: 2rem; flex-wrap: wrap;">
+            <div class="service-cta-row">
               <a href="contact.html?service=repair" class="btn btn-primary">Book Drone Thermal Scan</a>
               <a href="service-drone.html" class="btn btn-outline">Explore Drone Technology</a>
             </div>
@@ -629,7 +624,7 @@
           </p>
           <div class="footer-emergency-box">
             <span style="font-size: 0.75rem; text-transform: uppercase; font-weight: 800; color: #f8fafc; letter-spacing: 0.05em;">24/7 RAPID DISPATCH</span>
-            <a href="tel:18007663482" class="emergency-phone">1-800-ROOF-GUARD</a>
+            <a href="tel:18007663482" class="emergency-phone">+1 (800) 766-3482</a>
             <span style="font-size: 0.8rem; color: #cbd5e1;">Average arrival time: 30 minutes</span>
           </div>
         </div>
