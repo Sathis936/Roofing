@@ -105,26 +105,28 @@
 
   <main>
     <!-- PAGE HERO -->
-    <section class="hero-section hero-bg-contact" style="background: linear-gradient(rgba(15, 23, 42, 0.70), rgba(15, 23, 42, 0.78)), url('images/contact-hero.jpg') center center / cover no-repeat; padding: 4.75rem 0 4.25rem 0;">
+    <section class="hero-section hero-bg-contact">
       <div class="container text-center">
-        <div class="hero-pill" style="margin-bottom: 1.25rem;">
-          <span>Zero Obligation • Certified Engineers</span>
-        </div>
-        <h1 class="hero-title" style="margin-bottom: 1.15rem; font-size: 2.5rem;">
-          Schedule Your <span>Free Roof Inspection</span>
-        </h1>
-        <p class="hero-lead" style="max-width: 780px; margin: 0 auto 2.25rem auto;">
-          Get an itemized roof &amp; waterproofing report, drone thermal moisture detection, and a fixed-price estimate backed by our 25-Year Leak-Proof Guarantee.
-        </p>
-        <div style="display: flex; justify-content: center; gap: 0.65rem; flex-wrap: wrap;">
-          <a href="#mainBookingForm" class="btn btn-primary btn-sm">Fill Booking Form</a>
-          <a href="tel:18007663482" class="btn btn-outline-white btn-sm">Call +1 (800) 766-3482</a>
+        <div class="hero-content">
+          <div class="hero-pill">
+            <span>Zero Obligation • Certified Engineers</span>
+          </div>
+          <h1 class="hero-title">
+            Schedule Your <span>Free Roof Inspection</span>
+          </h1>
+          <p class="hero-lead">
+            Get an itemized roof &amp; waterproofing report, drone thermal moisture detection, and a fixed-price estimate backed by our 25-Year Leak-Proof Guarantee.
+          </p>
+          <div class="hero-actions">
+            <a href="#booking-section" class="btn btn-primary btn-sm">Fill Booking Form</a>
+            <a href="tel:18007663482" class="btn btn-outline-white btn-sm">Call +1 (800) 766-3482</a>
+          </div>
         </div>
       </div>
     </section>
 
     <!-- CONTACT FORM & DETAILS SECTION -->
-    <section class="section-padding">
+    <section class="section-padding" id="booking-section">
       <div class="container">
         <div class="contact-layout">
 
@@ -217,9 +219,10 @@
                   <textarea id="contactDesc" name="issue_description" class="form-control" placeholder="E.g. Water staining on drywall during heavy rains, standing puddles on the concrete terrace, missing shingles near chimney..."></textarea>
                 </div>
               </div>
+ 
 
               <!-- Submit Button -->
-              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: auto; padding: 0.75rem 1.25rem; font-size: 0.95rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;">
+              <button type="submit" class="btn btn-primary" style="width: 100%; margin-top: 0.85rem; padding: 0.75rem 1.25rem; font-size: 0.95rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem;">
                 <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5">
                   <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
                   <polyline points="22 4 12 14.01 9 11.01"></polyline>
@@ -231,11 +234,16 @@
 
           <!-- CONTRACTOR CONTACT & DISPATCH INFO -->
           <div class="contact-info-card" style="padding: 1.5rem 1.6rem; border-radius: var(--radius-lg);">
-            <div>
-              <h3 style="font-size: 1.25rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.35rem;">Direct Contractor Dispatch</h3>
-              <p class="text-muted" style="font-size: 0.85rem;">
-                Need instantaneous answers? Our licensed field engineers are standing by 24 hours a day, 7 days a week.
-              </p>
+            <div style="margin-bottom: 1.15rem;">
+              <div style="display: flex; align-items: center; justify-content: space-between; gap: 0.5rem; flex-wrap: wrap;">
+                <span class="section-subtitle">Immediate Assistance</span>
+                <span class="dispatch-live-badge">
+                  <span class="pulse-dot"></span>
+                  24/7 Dispatch Desk Live
+                </span>
+              </div>
+              <h2 style="font-size: 1.35rem; font-weight: 800; color: var(--text-main); margin-bottom: 0.35rem;">Direct Contractor Dispatch</h2>
+              <p class="text-muted" style="font-size: 0.85rem;">Need instantaneous answers? Our licensed  engineers are standing by 24 hours.</p>
             </div>
 
             <!-- Emergency Phone Item -->
@@ -246,9 +254,24 @@
                 </svg>
               </div>
               <div class="info-content">
-                <h4>24/7 Emergency Dispatch</h4>
+                <h4>24/7 Rapid Emergency Dispatch</h4>
                 <a href="tel:18007663482" class="emergency-phone" style="font-size: 1.25rem;">+1 (800) 766-3482</a>
-                <p>Toll-free rapid dispatch across all districts</p>
+                <p>Toll-free rapid dispatch across all districts &bull; Under 45-min arrival</p>
+              </div>
+            </div>
+
+            <!-- Email Direct -->
+            <div class="info-item">
+              <div class="info-icon">
+                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
+                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
+                  <polyline points="22,6 12,13 2,6"></polyline>
+                </svg>
+              </div>
+              <div class="info-content">
+                <h4>Estimates &amp; Architectural RFP</h4>
+                <p><a href="mailto:estimates@vanguardroofing.com" style="color: var(--brand-color); font-weight: 700;">estimates@vanguardroofing.com</a></p>
+                <p style="font-size: 0.85rem; color: var(--text-muted);">Digital blueprints &amp; leak photos reviewed within 15 mins</p>
               </div>
             </div>
 
@@ -261,7 +284,7 @@
                 </svg>
               </div>
               <div class="info-content">
-                <h4>Main Engineering Office</h4>
+                <h4>Main Engineering Office &amp; Fleet Yard</h4>
                 <p>442 Vanguard Industrial Parkway, Suite 100<br>Metro Engineering Center, NY 10001</p>
               </div>
             </div>
@@ -275,36 +298,57 @@
                 </svg>
               </div>
               <div class="info-content">
-                <h4>Operating Hours</h4>
+                <h4>Operating Hours &amp; Field Shifts</h4>
                 <p>
                   <strong>Office &amp; Estimating:</strong> Mon - Sat: 7:00 AM - 7:00 PM<br>
-                  <strong>Emergency Leak Crews:</strong> 24 Hours / 7 Days a Week
+                  <strong>Emergency Leak Crews:</strong> 24 Hours / 7 Days / 365 Days
                 </p>
               </div>
             </div>
 
-            <!-- Email Direct -->
-            <div class="info-item">
-              <div class="info-icon">
-                <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-                  <path d="M4 4h16c1.1 0 2 .9 2 2v12c0 1.1-.9 2-2 2H4c-1.1 0-2-.9-2-2V6c0-1.1.9-2 2-2z"></path>
-                  <polyline points="22,6 12,13 2,6"></polyline>
-                </svg>
+            <!-- Department Routing Matrix -->
+            <div class="dispatch-routing-card">
+              <div class="dispatch-routing-head">
+                <span>Direct Phone Extensions</span>
+                <span class="badge-ext">Fast Routing</span>
               </div>
-              <div class="info-content">
-                <h4>Estimates &amp; Inquiries</h4>
-                <p><a href="mailto:estimates@vanguardroofing.com" style="color: var(--brand-color); font-weight: 700;">estimates@vanguardroofing.com</a></p>
-                <p style="font-size: 0.85rem; color: var(--text-muted);">Responses typically within 15 minutes</p>
+              <div class="dispatch-ext-row">
+                <div class="dispatch-ext-pill">
+                  <span>Residential</span>
+                  <strong>Ext. 101</strong>
+                </div>
+                <div class="dispatch-ext-pill">
+                  <span>Commercial</span>
+                  <strong>Ext. 102</strong>
+                </div>
+                <div class="dispatch-ext-pill">
+                  <span>Warranty/AMC</span>
+                  <strong>Ext. 103</strong>
+                </div>
               </div>
             </div>
 
             <!-- Service Radius Callout -->
-            <div class="radius-callout" style="background: var(--bg-tertiary); border-radius: var(--radius-md); padding: 1.25rem; border-left: 4px solid var(--brand-color); margin-top: auto;">
-              <strong style="display: block; font-size: 0.95rem; margin-bottom: 0.25rem; color: var(--text-main);">50-Mile Free Inspection Radius</strong>
-              <p style="font-size: 0.85rem; color: var(--text-secondary); margin: 0;">
-                We dispatch fully equipped thermal diagnostic vans within a 50-mile radius with zero travel or evaluation surcharge.
+            <div class="radius-callout">
+              <div style="display: flex; justify-content: space-between; align-items: center; margin-bottom: 0.35rem;">
+                <strong style="font-size: 0.92rem; color: var(--text-main); display: inline-flex; align-items: center; gap: 0.4rem;">
+                  <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="var(--brand-color)" stroke-width="2.5"><circle cx="12" cy="12" r="10"></circle><line x1="2" y1="12" x2="22" y2="12"></line><path d="M12 2a15.3 15.3 0 0 1 4 10 15.3 15.3 0 0 1-4 10 15.3 15.3 0 0 1-4-10 15.3 15.3 0 0 1 4-10z"></path></svg>
+                  50-Mile Free Inspection Radius
+                </strong>
+                <span class="badge-zero-fee">$0 Surcharge</span>
+              </div>
+              <p style="font-size: 0.82rem; color: var(--text-secondary); margin: 0; line-height: 1.45;">
+                We dispatch fully equipped thermal diagnostic vans within a 50-mile radius across all metropolitan districts with zero travel or evaluation fees.
               </p>
             </div>
+
+            <!-- Bottom Dispatch CTA Button: Equal to Submit Button on Left -->
+            <a href="tel:18007663482" class="btn btn-primary" style="width: 100%; margin-top: 0.85rem; padding: 0.75rem 1.25rem; font-size: 0.95rem; font-weight: 700; display: inline-flex; align-items: center; justify-content: center; gap: 0.5rem; text-decoration: none;">
+              <svg width="18" height="18" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2">
+                <path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"></path>
+              </svg>
+              <span>Call Rapid Dispatch: +1 (800) 766-3482</span>
+            </a>
           </div>
 
         </div>

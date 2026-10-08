@@ -426,7 +426,7 @@ function initEstimator() {
     const lowEst = Math.round(baseTotal * 0.9);
     const highEst = Math.round(baseTotal * 1.15);
 
-    priceDisplay.textContent = `₹${lowEst.toLocaleString('en-IN')} - ₹${highEst.toLocaleString('en-IN')}`;
+    priceDisplay.innerHTML = `<span class="price-val">₹${lowEst.toLocaleString('en-IN')}</span> <span class="price-sep">–</span> <span class="price-val">₹${highEst.toLocaleString('en-IN')}</span>`;
     if (warrantyDisplay) warrantyDisplay.textContent = warranty;
     if (timelineDisplay) timelineDisplay.textContent = timeline;
     if (ctaBtn) {
