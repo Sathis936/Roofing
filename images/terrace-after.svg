@@ -1,5 +1,6 @@
 <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 500" width="800" height="500">
   <defs>
+    <style>text, rect[rx="8"], rect[rx="6"] { display: none; }</style>
     <linearGradient id="skyAfter" x1="0%" y1="0%" x2="0%" y2="100%">
       <stop offset="0%" stop-color="#0284c7"/>
       <stop offset="100%" stop-color="#38bdf8"/>
@@ -20,14 +21,14 @@
   </defs>
   <!-- Bright Clear Sky -->
   <rect width="800" height="500" fill="url(#skyAfter)"/>
-  
+
   <!-- Sunshine glow -->
   <circle cx="700" cy="80" r="120" fill="#fef08a" opacity="0.4"/>
   <circle cx="700" cy="80" r="60" fill="#fde047" opacity="0.6"/>
 
   <!-- Finished Parapet Wall with Waterproof Coating -->
   <polygon points="0,120 800,120 800,240 0,240" fill="url(#parapetAfter)"/>
-  
+
   <!-- High-Performance Coving / Fillet Waterproof Seal Line -->
   <line x1="0" y1="240" x2="800" y2="240" stroke="url(#sealOrange)" stroke-width="6"/>
 
