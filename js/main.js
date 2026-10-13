@@ -154,18 +154,17 @@ function logoutUser() {
 }
 
 function initNavbarAuth() {
-  // Clear any legacy user so navbar remains 100% constant and unshifted
-  const authContainers = document.querySelectorAll('.nav-auth-container');
+  const authContainers = document.querySelectorAll('.nav-auth-container, .header-cta-wrap');
 
   authContainers.forEach(container => {
-    // REQUIREMENT: Keep navbar CONSTANT for every page (always standard Login button)
+    // Primary Header CTA (No Login / Dashboard required)
     container.innerHTML = `
-      <a href="login.html" class="btn btn-primary btn-sm login-btn" title="Client & Contractor Portal">
-        <svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round">
-          <path d="M20 21v-2a4 4 0 0 0-4-4H8a4 4 0 0 0-4 4v2"></path>
-          <circle cx="12" cy="7" r="4"></circle>
+      <a href="contact.html" class="btn btn-primary btn-sm header-cta-btn" title="Schedule Free Inspection">
+        <svg width="15" height="15" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.5" stroke-linecap="round" stroke-linejoin="round">
+          <path d="M22 11.08V12a10 10 0 1 1-5.93-9.14"></path>
+          <polyline points="22 4 12 14.01 9 11.01"></polyline>
         </svg>
-        <span>Login</span>
+        <span>Free Inspection</span>
       </a>
     `;
   });

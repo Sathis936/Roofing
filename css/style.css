@@ -473,22 +473,41 @@ html[dir="rtl"] .slider-handle {
 .hero-section .btn-outline,
 .hero-section .btn-outline-white,
 .cta-banner .btn-outline,
+.cta-banner-card .btn-outline,
+.cta-banner-card .btn-outline-white,
 [style*="#0f172a"] .btn-outline,
-[style*="#1e293b"] .btn-outline {
+[style*="#0f172a"] .btn-outline-white,
+[style*="#1e293b"] .btn-outline,
+[style*="#1e293b"] .btn-outline-white {
   color: #ffffff !important;
   border: 1.5px solid rgba(255, 255, 255, 0.45) !important;
-  background-color: rgba(255, 255, 255, 0.08);
+  background-color: rgba(255, 255, 255, 0.08) !important;
   font-weight: 700;
+  transition: all var(--transition-fast);
 }
 
 .hero-section .btn-outline:hover,
 .hero-section .btn-outline-white:hover,
 .cta-banner .btn-outline:hover,
+.cta-banner-card .btn-outline:hover,
+.cta-banner-card .btn-outline-white:hover,
 [style*="#0f172a"] .btn-outline:hover,
-[style*="#1e293b"] .btn-outline:hover {
+[style*="#0f172a"] .btn-outline-white:hover,
+[style*="#1e293b"] .btn-outline:hover,
+[style*="#1e293b"] .btn-outline-white:hover {
   background-color: #ffffff !important;
   border-color: #ffffff !important;
   color: #0f172a !important;
+}
+
+.cta-banner-card .btn-outline:hover *,
+.cta-banner-card .btn-outline-white:hover *,
+[style*="#0f172a"] .btn-outline:hover *,
+[style*="#0f172a"] .btn-outline-white:hover *,
+[style*="#1e293b"] .btn-outline:hover *,
+[style*="#1e293b"] .btn-outline-white:hover * {
+  color: #0f172a !important;
+  stroke: #0f172a !important;
 }
 
 /* Outline buttons in Dark Mode */
@@ -929,16 +948,28 @@ html[dir="rtl"] .nav-item.has-dropdown.show .dropdown-menu {
   display: none !important;
 }
 
-/* Auth Section in Navbar */
-.nav-auth-container {
+/* Auth / Header CTA Section in Navbar */
+.nav-auth-container,
+.header-cta-wrap {
   display: inline-flex;
   align-items: center;
   gap: 0.5rem;
   margin-left: 0.25rem;
 }
-html[dir="rtl"] .nav-auth-container {
+html[dir="rtl"] .nav-auth-container,
+html[dir="rtl"] .header-cta-wrap {
   margin-left: 0;
   margin-right: 0.25rem;
+}
+
+.header-cta-btn,
+.login-btn {
+  display: inline-flex;
+  align-items: center;
+  gap: 0.4rem;
+  font-weight: 700;
+  white-space: nowrap;
+  letter-spacing: 0.01em;
 }
 
 .auth-user-badge {
@@ -3778,15 +3809,18 @@ html[dir="rtl"] .toast {
   }
 
 
-  /* Auth Buttons Mobile */
-  .nav-auth-container {
+  /* Auth / CTA Buttons Mobile */
+  .nav-auth-container,
+  .header-cta-wrap {
     margin: 0;
     gap: 0.35rem;
   }
-  html[dir="rtl"] .nav-auth-container {
+  html[dir="rtl"] .nav-auth-container,
+  html[dir="rtl"] .header-cta-wrap {
     margin: 0;
   }
 
+  .header-cta-btn,
   .login-btn {
     height: 34px;
     padding: 0 0.65rem;
@@ -3795,6 +3829,7 @@ html[dir="rtl"] .toast {
     gap: 0.3rem;
   }
 
+  .header-cta-btn svg,
   .login-btn svg {
     width: 14px;
     height: 14px;
@@ -4020,6 +4055,7 @@ html[dir="rtl"] .toast {
     font-size: 1.15rem !important;
   }
 
+  .header-cta-btn,
   .login-btn {
     height: 32px;
     padding: 0 0.5rem;
@@ -4227,11 +4263,13 @@ html[dir="rtl"] .toast {
     padding-right: 0.65rem !important;
   }
 
+  .header-cta-btn span,
   .login-btn span,
   .logout-btn span {
     display: none;
   }
 
+  .header-cta-btn,
   .login-btn,
   .logout-btn {
     width: 32px;
